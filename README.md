@@ -84,7 +84,7 @@ To create a conjunct, add `*` to the first consonant stroke - this adds a specia
 |---|---|
 | S*/T | S*/K |
 
-You might recognize these as they are used in नमस्ते (Namaste, "I bow to you"), and नमस्कार (Namaskār, "I bow to you") - two common greetings.  There are *many* conjunct consonants used in Hindi words.
+You might recognize these as they are used in नमस्ते (Namaste, "I bow to you"), and नमस्कार (Namaskār, "I bow to you") - two common greetings.  There are *many* conjunct consonants used in Hindi words.  This stroke technique will work for most.  However there are some conjuncts that are typically represented by using a dot above the horizontal line instead - in these cases you can use the `PW*RBGS` second stroke mentioned above to explicitly add this.
 
 And that's it!
 
