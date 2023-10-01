@@ -68,7 +68,7 @@ There is a symbol in Devanagari that represents an "echoing" of the vowel sound 
 
 ### Other nasalisation with anusvaar
 
-An anusvaar (looks like a bindu, single dot above) may be added for other nasalizations as well.  I've made this a second stroke for when it is needed.  Perform a second stroke `ं` when you require to add an anusvaar to the previous character.  Here are two examples:
+An anusvaar (looks like a bindu, single dot above) may be added for other nasalizations as well.  I've made this a second stroke for when it is needed.  Perform a second stroke `PW*RBGS` when you require to add an anusvaar to the previous character.  Here are two examples:
 
 |कं|खं|
 |---|---|
