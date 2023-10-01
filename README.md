@@ -46,7 +46,7 @@ To write consonant + mātrā is simple - just combine the consonant and vowel st
 
 |न|ना|नि|नी|नु|नू|नृ|ने|नै|नो|नौ|
 |---|---|---|---|---|---|---|---|---|---|---|
-| TPH | TPHAU | TPHEU |TPHAOE |TPHAO |TPHU | TPHE | TPHAEU | TPHAOEU | TPHO | TPHAU |
+| TPH | TPHAU | TPHEU |TPHAOE |TPHAO |TPHU | TPHE | TPHAEU | TPHAOEU | TPHO | TPHAOU |
 
 ### Adding nasalisation with Bindu/Chandrabindu
 
@@ -56,7 +56,7 @@ To add bindu/chandrabindu nasalisation to your stroke, simply add `*B` to your s
 
 |नँ|नाँ|निं|नीं|नुँ|नूँ|नृँ|नें|नैं|नेौ|नौं|
 |---|---|---|---|---|---|---|---|---|---|---|
-| TPH*B | TPHA*UB | TPH*EUB | TPHAO*EB | TPHAO*B | TPH*UB | TPH*EB | TPHA*EUB | TPHAO*EUB | TPHO*B | TPHA*UB |
+| TPH*B | TPHA*UB | TPH*EUB | TPHAO*EB | TPHAO*B | TPH*UB | TPH*EB | TPHA*EUB | TPHAO*EUB | TPHO*B | TPHAO*UB |
 
 ### Adding Visarg
 
