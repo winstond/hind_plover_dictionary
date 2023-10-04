@@ -991,27 +991,45 @@ ConsonantsWithBindu=s({
 "O": "{^ओ}"
         })
 
-virama=s({
+#Added to base consonants to form conjuncts
+Virama=s({
         '*':       '{^्}'
 	})
 
+#Add to all consonants/consonants+mitra to ass visarg
 Visarg=s({
     "*G": "{^ः}"
         })
 
+#Add to all consonants/consonant+mitra where the default vowel nasalization would be a chandrabindu
 Chandrabindu=s({
     "*B": "{^ँ}"
         })
 
+#Add to all consonants/consonant+mitra where the default vowel nasalization would be a bindu
 Bindu=s({
     "*B": "{^ं}"
+        })
+
+#Add to all consonants/consonant+mitra where other nasalization is required (conjunct, velar, palatal, etc. - see https://openbooks.lib.msu.edu/basichindi/chapter/nasal-sounds-in-hindi/).  Uses same character as "bindu".
+Nasalization=s({
+    "*PB": "{^ं}"
+        })
+
+#Separate stroke to add special characters (virama, visarg, chandrabindu,bindu, Nasalisation
+SpecialCharacters=s({
+        "SR*RBGS":"{^्}",
+        "S*RBGS": "{^ः}",
+        "KH*RBGS": "{^ँ}",
+        "PW*RBGS": "{^ं}",
+        "TPH*RBGS": "{^ं}"
         })
 
 # ======== Main definitions.
 
 # |: Compute the union of two dictionaries.
 # *: Compute the (Cartesian) product of two dictionaries. The 2 adjacent strokes are merged.
-dictionary = ConsonantsAndMitras | Vowels | VowelsStandalone | BaseConsonants*virama | ConsonantsAndMitras*Visarg | Vowels*Visarg | ConsonantsWithBindu*Bindu | ConsonantsWithChandraBindu*Chandrabindu
+dictionary = ConsonantsAndMitras | Vowels | VowelsStandalone | BaseConsonants*Virama | ConsonantsAndMitras*Nasalization | Vowels*Nasalization | ConsonantsAndMitras*Visarg | Vowels*Visarg | ConsonantsWithBindu*Bindu | ConsonantsWithChandraBindu*Chandrabindu | SpecialCharacters
 
 # ======== More boilerplate (the lambda is required because plover-python-dictionary only accept objects with function type as the lookup function
 
