@@ -66,15 +66,7 @@ There is a symbol in Devanagari that represents an "echoing" of the vowel sound 
 |---|---|
 | K*G | A*G |
 
-### Other nasalisation with anusvaar
-
-An anusvaar (looks like a bindu, single dot above) may be added for other nasalizations as well.  I've made this a second stroke for when it is needed.  Perform a second stroke `PW*RBGS` when you require to add an anusvaar to the previous character.  Here are two examples:
-
-|कं|खं|
-|---|---|
-| K/PW*RBGS | KWH/PW*RBGS |
-
-###Conjunct Consonants
+### Conjunct Consonants
 
 Finally, Devanagari has a concept of joining consonants together to form a single character  This is typically done to show that the default अ sound should not be used between these two consonants.
 
@@ -84,7 +76,26 @@ To create a conjunct, add `*` to the first consonant stroke - this adds a specia
 |---|---|
 | S*/T | S*/K |
 
-You might recognize these as they are used in नमस्ते (Namaste, "I bow to you"), and नमस्कार (Namaskār, "I bow to you") - two common greetings.  There are *many* conjunct consonants used in Hindi words.  This stroke technique will work for most.  However there are some conjuncts that are typically represented by using a dot above the horizontal line instead - in these cases you can use the `PW*RBGS` second stroke mentioned above to explicitly add this.
+You might recognize these as they are used in नमस्ते (Namaste, "I bow to you"), and नमस्कार (Namaskār, "I bow to you") - two common greetings.  There are *many* conjunct consonants used in Hindi words.  This stroke technique will work for most.  However there are some conjuncts that are typically represented by using a dot above the horizontal line instead (see **Other Nasalisation** below).
+
+### Other nasalisation with anusvaar (consonant, nasal conjuncts, etc.)
+
+An anusvaar (looks like a bindu, single dot above) may be added for other nasalisations as well.  This can be added to a stroke with `*PB`.  Here are two examples:
+
+|कं|खं|
+|---|---|
+| K*PB | KWH*PB |
+
+### Special Characters as second strokes
+
+You may occassionally need to add a special character with a second stroke.  In those cases you can use the following:
+
+|Name|Stoke|Example Stroke|Example Output|
+|---|---|---|---|
+| Virama | SR*RBGS | K/SR*RBGS | क् |
+| Bindu | PW*RBGS | K/PW*RBGS | कं |
+| Chandrabindu | KH*RBGS | K/KH*RBGS | कँ |
+| Visarg | S*RBGS | K/S*RBGS | कः |
 
 And that's it!
 
