@@ -1,5 +1,8 @@
 # hind_plover_dictionary
 
+## PLEASE NOTE: Undergoing significant updates...
+The below documentation refers to releast v1.0 which is avaiable for download.  Commits after that will reflect changes that break some of the below documentation.  Please be patient as we create a proper steno dictionary!  Documentation will be updated on next release.
+
 A steno dictionary for writing Hindi in the **Devanagari** script using Plover Steno.
 
 ## Usage
