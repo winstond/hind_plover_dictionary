@@ -1,3 +1,5 @@
+
+
 #!/bin/python
 
 # ======== Imports.
@@ -15,10 +17,115 @@ stroke=context.stroke
 translation=context.translation
 
 # ======== Define constants.
-leader_stroke="TP*EURPBG" # finger*
-leader_stroke_2="TP*EURPBGS" # fingers*
+#leader_stroke="TP*EURPBG" # finger*
+#leader_stroke_2="TP*EURPBGS" # fingers*
 
 # s(...): Creates a Dictionary object from a dict (or a list, for example, ["S"] is equivalent to {"S": "S"})
+
+FSConsonantsAndMitras=s({
+"KPWFPLT": "{^ङ}",
+"KPWAUFPLT": "{^ङा}",
+"KPWEUFPLT": "{^ङि}",
+"KPWAOEFPLT": "{^ङी}",
+"KPWAOFPLT": "{^ङु}",
+"KPWUFPLT": "{^ङू}",
+"KPWEFPLT": "{^ङृ}",
+"KPWAEUFPLT": "{^ङे}",
+"KPWAOEUFPLT": "{^ङै}",
+"KPWOFPLT": "{^ङो}",
+"KPWAOUFPLT": "{^ङौ}",
+"STPHAUFPLT": "{^ञा}",
+"STPHFPLT": "{^ञ}",
+"STPHEUFPLT": "{^ञि}",
+"STPHAOEFPLT": "{^ञी}",
+"STPHAOFPLT": "{^ञु}",
+"STPHUFPLT": "{^ञू}",
+"STPHEFPLT": "{^ञृ}",
+"STPHAEUFPLT": "{^ञे}",
+"STPHAOEUFPLT": "{^ञै}",
+"STPHOFPLT": "{^ञो}",
+"STPHAOUFPLT": "{^ञौ}",
+"TPHRFPLT": "{^ण}",
+"TPHRAUFPLT": "{^णा}",
+"TPHREUFPLT": "{^णि}",
+"TPHRAOEFPLT": "{^णी}",
+"TPHRAOFPLT": "{^णु}",
+"TPHRUFPLT": "{^णू}",
+"TPHREFPLT": "{^णृ}",
+"TPHRAEUFPLT": "{^णे}",
+"TPHRAOEUFPLT": "{^णै}",
+"TPHROFPLT": "{^णो}",
+"TPHRAOUFPLT": "{^णौ}",
+"SKHRFPLT": "{^ष}",
+"SKHRAUFPLT": "{^षा}",
+"SKHREUFPLT": "{^षि}",
+"SKHRAOEFPLT": "{^षी}",
+"SKHRAOFPLT": "{^षु}",
+"SKHRUFPLT": "{^षू}",
+"SKHREFPLT": "{^षृ}",
+"SKHRAEUFPLT": "{^षे}",
+"SKHRAOEUFPLT": "{^षै}",
+"SKHROFPLT": "{^षो}",
+"SKHRAOUFPLT": "{^षौ}"
+})
+
+FSConsonantsWithChandrabindu=s({
+"KPWFPLT": "{^ङ}",
+"KPWAUFPLT": "{^ङा}",
+"KPWAOFPLT": "{^ङु}",
+"KPWUFPLT": "{^ङू}",
+"KPWEFPLT": "{^ङृ}",
+"STPHFPLT": "{^ञ}",
+"STPHAUFPLT": "{^ञा}",
+"STPHAOFPLT": "{^ञु}",
+"STPHUFPLT": "{^ञू}",
+"STPHEFPLT": "{^ञृ}",
+"TPHRFPLT": "{^ण}",
+"TPHRAUFPLT": "{^णा}",
+"TPHRAOFPLT": "{^णु}",
+"TPHRUFPLT": "{^णू}",
+"TPHREFPLT": "{^णृ}",
+"SKHRFPLT": "{^ष}",
+"SKHRAUFPLT": "{^षा}",
+"SKHRAOFPLT": "{^षु}",
+"SKHRUFPLT": "{^षू}",
+"SKHREFPLT": "{^षृ}"
+})
+
+FSConsonantsWithBindu=s({
+"KPWEUFPLT": "{^ङि}",
+"KPWAOEFPLT": "{^ङी}",
+"KPWAEUFPLT": "{^ङे}",
+"KPWAOEUFPLT": "{^ङै}",
+"KPWOFPLT": "{^ङो}",
+"KPWAOUFPLT": "{^ङौ}",
+"STPHEUFPLT": "{^ञि}",
+"STPHAOEFPLT": "{^ञी}",
+"STPHAEUFPLT": "{^ञे}",
+"STPHAOEUFPLT": "{^ञै}",
+"STPHOFPLT": "{^ञो}",
+"STPHAOUFPLT": "{^ञौ}",
+"TPHREUFPLT": "{^णि}",
+"TPHRAOEFPLT": "{^णी}",
+"TPHRAEUFPLT": "{^णे}",
+"TPHRAOEUFPLT": "{^णै}",
+"TPHROFPLT": "{^णो}",
+"TPHRAOUFPLT": "{^णौ}",
+"SKHREUFPLT": "{^षि}",
+"SKHRAOEFPLT": "{^षी}",
+"SKHRAEUFPLT": "{^षे}",
+"SKHRAOEUFPLT": "{^षै}",
+"SKHROFPLT": "{^षो}",
+"SKHRAOUFPLT": "{^षौ}"
+})
+
+FSBaseConsonants=s({
+"KPWFPLT": "{^ङ}",
+"STPHFPLT": "{^ञ}",
+"TPHRFPLT": "{^ण}",
+"SKHRFPLT": "{^ष}",
+})
+
 
 ConsonantsAndMitras=s({
 "K": "{^क}",
@@ -142,17 +249,17 @@ ConsonantsAndMitras=s({
 "SWRAOEU": "{^ज़ै}",
 "SWRO": "{^ज़ो}",
 "SWRAOU": "{^ज़ौ}",
-"TR": "{^ठ}",
-"TRAU": "{^ठा}",
-"TREU": "{^ठि}",
-"TRAOE": "{^ठी}",
-"TRAO": "{^ठु}",
-"TRU": "{^ठू}",
-"TRE": "{^ठृ}",
-"TRAEU": "{^ठे}",
-"TRAOEU": "{^ठै}",
-"TRO": "{^ठो}",
-"TRAOU": "{^ठौ}",
+"THR": "{^ठ}",
+"THRAU": "{^ठा}",
+"THREU": "{^ठि}",
+"THRAOE": "{^ठी}",
+"THRAO": "{^ठु}",
+"THRU": "{^ठू}",
+"THRE": "{^ठृ}",
+"THRAEU": "{^ठे}",
+"THRAOEU": "{^ठै}",
+"THRO": "{^ठो}",
+"THRAOU": "{^ठौ}",
 "TH": "{^थ}",
 "THAU": "{^था}",
 "THEU": "{^थि}",
@@ -186,17 +293,6 @@ ConsonantsAndMitras=s({
 "SHAOEU": "{^शै}",
 "SHO": "{^शो}",
 "SHAOU": "{^शौ}",
-"KPW": "{^ङ}",
-"KPWAU": "{^ङा}",
-"KPWEU": "{^ङि}",
-"KPWAOE": "{^ङी}",
-"KPWAO": "{^ङु}",
-"KPWU": "{^ङू}",
-"KPWE": "{^ङृ}",
-"KPWAEU": "{^ङे}",
-"KPWAOEU": "{^ङै}",
-"KPWO": "{^ङो}",
-"KPWAOU": "{^ङौ}",
 "SKWHR": "{^झ}",
 "SKWHRAU": "{^झा}",
 "SKWHREU": "{^झि}",
@@ -208,72 +304,39 @@ ConsonantsAndMitras=s({
 "SKWHRAOEU": "{^झै}",
 "SKWHRO": "{^झो}",
 "SKWHRAOU": "{^झौ}",
-"STPH": "{^ञ}",
-"STPHAU": "{^ञा}",
-"STPHEU": "{^ञि}",
-"STPHAOE": "{^ञी}",
-"STPHAO": "{^ञु}",
-"STPHU": "{^ञू}",
-"STPHE": "{^ञृ}",
-"STPHAEU": "{^ञे}",
-"STPHAOEU": "{^ञै}",
-"STPHO": "{^ञो}",
-"STPHAOU": "{^ञौ}",
-"TWR": "{^ट}",
-"TWRAU": "{^टा}",
-"TWREU": "{^टि}",
-"TWRAOE": "{^टी}",
-"TWRAO": "{^टु}",
-"TWRU": "{^टू}",
-"TWRE": "{^टृ}",
-"TWRAEU": "{^टे}",
-"TWRAOEU": "{^टै}",
-"TWRO": "{^टो}",
-"TWRAOU": "{^टौ}",
-"TKPH": "{^ढ}",
-"TKPHAU": "{^ढा}",
-"TKPHEU": "{^ढि}",
-"TKPHAOE": "{^ढी}",
-"TKPHAO": "{^ढु}",
-"TKPHU": "{^ढू}",
-"TKPHE": "{^ढृ}",
-"TKPHAEU": "{^ढे}",
-"TKPHAOEU": "{^ढै}",
-"TKPHO": "{^ढो}",
-"TKPHAOU": "{^ढौ}",
-"TPHR": "{^ण}",
-"TPHRAU": "{^णा}",
-"TPHREU": "{^णि}",
-"TPHRAOE": "{^णी}",
-"TPHRAO": "{^णु}",
-"TPHRU": "{^णू}",
-"TPHRE": "{^णृ}",
-"TPHRAEU": "{^णे}",
-"TPHRAOEU": "{^णै}",
-"TPHRO": "{^णो}",
-"TPHRAOU": "{^णौ}",
-"SKHR": "{^ष}",
-"SKHRAU": "{^षा}",
-"SKHREU": "{^षि}",
-"SKHRAOE": "{^षी}",
-"SKHRAO": "{^षु}",
-"SKHRU": "{^षू}",
-"SKHRE": "{^षृ}",
-"SKHRAEU": "{^षे}",
-"SKHRAOEU": "{^षै}",
-"SKHRO": "{^षो}",
-"SKHRAOU": "{^षौ}",
-"TKP": "{^ड}",
-"TKPAU": "{^डा}",
-"TKPEU": "{^डि}",
-"TKPAOE": "{^डी}",
-"TKPAO": "{^डु}",
-"TKPU": "{^डू}",
-"TKPE": "{^डृ}",
-"TKPAEU": "{^डे}",
-"TKPAOEU": "{^डै}",
-"TKPO": "{^डो}",
-"TKPAOU": "{^डौ}",
+"TR": "{^ट}",
+"TRAU": "{^टा}",
+"TREU": "{^टि}",
+"TRAOE": "{^टी}",
+"TRAO": "{^टु}",
+"TRU": "{^टू}",
+"TRE": "{^टृ}",
+"TRAEU": "{^टे}",
+"TRAOEU": "{^टै}",
+"TRO": "{^टो}",
+"TRAOU": "{^टौ}",
+"TKHR": "{^ढ}",
+"TKHRAU": "{^ढा}",
+"TKHREU": "{^ढि}",
+"TKHRAOE": "{^ढी}",
+"TKHRAO": "{^ढु}",
+"TKHRU": "{^ढू}",
+"TKHRE": "{^ढृ}",
+"TKHRAEU": "{^ढे}",
+"TKHRAOEU": "{^ढै}",
+"TKHRO": "{^ढो}",
+"TKHRAOU": "{^ढौ}",
+"TKR": "{^ड}",
+"TKRAU": "{^डा}",
+"TKREU": "{^डि}",
+"TKRAOE": "{^डी}",
+"TKRAO": "{^डु}",
+"TKRU": "{^डू}",
+"TKRE": "{^डृ}",
+"TKRAEU": "{^डे}",
+"TKRAOEU": "{^डै}",
+"TKRO": "{^डो}",
+"TKRAOU": "{^डौ}",
 "WR": "{^ड़}",
 "WRAU": "{^ड़ा}",
 "WREU": "{^ड़ि}",
@@ -285,17 +348,17 @@ ConsonantsAndMitras=s({
 "WRAOEU": "{^ड़ै}",
 "WRO": "{^ड़ो}",
 "WRAOU": "{^ड़ौ}",
-"TKR": "{^ढ़}",
-"TKRAU": "{^ढ़ा}",
-"TKREU": "{^ढ़ि}",
-"TKRAOE": "{^ढ़ी}",
-"TKRAO": "{^ढ़ु}",
-"TKRU": "{^ढ़ू}",
-"TKRE": "{^ढ़ृ}",
-"TKRAEU": "{^ढ़े}",
-"TKRAOEU": "{^ढ़ै}",
-"TKRO": "{^ढ़ो}",
-"TKRAOU": "{^ढ़ौ}",
+"WHR": "{^ढ़}",
+"WHRAU": "{^ढ़ा}",
+"WHREU": "{^ढ़ि}",
+"WHRAOE": "{^ढ़ी}",
+"WHRAO": "{^ढ़ु}",
+"WHRU": "{^ढ़ू}",
+"WHRE": "{^ढ़ृ}",
+"WHRAEU": "{^ढ़े}",
+"WHRAOEU": "{^ढ़ै}",
+"WHRO": "{^ढ़ो}",
+"WHRAOU": "{^ढ़ौ}",
 "T": "{^त}",
 "TAU": "{^ता}",
 "TEU": "{^ति}",
@@ -475,7 +538,7 @@ VowelsStandalone=s({
 "*EU": "इ",
 "O*": "ओ",
 "*U": "ऊ"
-    })
+        })
 
 Vowels=s({
 "A": "{^अ}",
@@ -503,20 +566,16 @@ BaseConsonants=s({
 "KHR": "{^छ}",
 "SKWR": "{^ज}",
 "SWR": "{^ज़}",
-"TR": "{^ठ}",
+"THR": "{^ठ}",
 "TH": "{^थ}",
 "PWH": "{^भ}",
 "SH": "{^श}",
-"KPW": "{^ङ}",
 "SKWHR": "{^झ}",
-"STPH": "{^ञ}",
-"TWR": "{^ट}",
-"TKPH": "{^ढ}",
-"TPHR": "{^ण}",
-"SKHR": "{^ष}",
-"TKP": "{^ड}",
+"TR": "{^ट}",
+"TKHR": "{^ढ}",
+"TKR": "{^ड}",
 "WR": "{^ड़}",
-"TKR": "{^ढ़}",
+"WHR": "{^ढ़}",
 "T": "{^त}",
 "TK": "{^द}",
 "TKH": "{^ध}",
@@ -590,11 +649,11 @@ ConsonantsWithChandraBindu=s({
 "SWRAO": "{^ज़ु}",
 "SWRU": "{^ज़ू}",
 "SWRE": "{^ज़ृ}",
-"TR": "{^ठ}",
-"TRAU": "{^ठा}",
-"TRAO": "{^ठु}",
-"TRU": "{^ठू}",
-"TRE": "{^ठृ}",
+"THR": "{^ठ}",
+"THRAU": "{^ठा}",
+"THRAO": "{^ठु}",
+"THRU": "{^ठू}",
+"THRE": "{^ठृ}",
 "TH": "{^थ}",
 "THAU": "{^था}",
 "THAO": "{^थु}",
@@ -610,56 +669,36 @@ ConsonantsWithChandraBindu=s({
 "SHAO": "{^शु}",
 "SHU": "{^शू}",
 "SHE": "{^शृ}",
-"KPW": "{^ङ}",
-"KPWAU": "{^ङा}",
-"KPWAO": "{^ङु}",
-"KPWU": "{^ङू}",
-"KPWE": "{^ङृ}",
 "SKWHR": "{^झ}",
 "SKWHRAU": "{^झा}",
 "SKWHRAO": "{^झु}",
 "SKWHRU": "{^झू}",
 "SKWHRE": "{^झृ}",
-"STPH": "{^ञ}",
-"STPHAU": "{^ञा}",
-"STPHAO": "{^ञु}",
-"STPHU": "{^ञू}",
-"STPHE": "{^ञृ}",
-"TWR": "{^ट}",
-"TWRAU": "{^टा}",
-"TWRAO": "{^टु}",
-"TWRU": "{^टू}",
-"TWRE": "{^टृ}",
-"TKPH": "{^ढ}",
-"TKPHAU": "{^ढा}",
-"TKPHAO": "{^ढु}",
-"TKPHU": "{^ढू}",
-"TKPHE": "{^ढृ}",
-"TPHR": "{^ण}",
-"TPHRAU": "{^णा}",
-"TPHRAO": "{^णु}",
-"TPHRU": "{^णू}",
-"TPHRE": "{^णृ}",
-"SKHR": "{^ष}",
-"SKHRAU": "{^षा}",
-"SKHRAO": "{^षु}",
-"SKHRU": "{^षू}",
-"SKHRE": "{^षृ}",
-"TKP": "{^ड}",
-"TKPAU": "{^डा}",
-"TKPAO": "{^डु}",
-"TKPU": "{^डू}",
-"TKPE": "{^डृ}",
+"TR": "{^ट}",
+"TRAU": "{^टा}",
+"TRAO": "{^टु}",
+"TRU": "{^टू}",
+"TRE": "{^टृ}",
+"TKHR": "{^ढ}",
+"TKHRAU": "{^ढा}",
+"TKHRAO": "{^ढु}",
+"TKHRU": "{^ढू}",
+"TKHRE": "{^ढृ}",
+"TKR": "{^ड}",
+"TKRAU": "{^डा}",
+"TKRAO": "{^डु}",
+"TKRU": "{^डू}",
+"TKRE": "{^डृ}",
 "WR": "{^ड़}",
 "WRAU": "{^ड़ा}",
 "WRAO": "{^ड़ु}",
 "WRU": "{^ड़ू}",
 "WRE": "{^ड़ृ}",
-"TKR": "{^ढ़}",
-"TKRAU": "{^ढ़ा}",
-"TKRAO": "{^ढ़ु}",
-"TKRU": "{^ढ़ू}",
-"TKRE": "{^ढ़ृ}",
+"WHR": "{^ढ़}",
+"WHRAU": "{^ढ़ा}",
+"WHRAO": "{^ढ़ु}",
+"WHRU": "{^ढ़ू}",
+"WHRE": "{^ढ़ृ}",
 "T": "{^त}",
 "TAU": "{^ता}",
 "TAO": "{^तु}",
@@ -811,12 +850,12 @@ ConsonantsWithBindu=s({
 "SWRAOEU": "{^ज़ै}",
 "SWRO": "{^ज़ो}",
 "SWRAOU": "{^ज़ौ}",
-"TREU": "{^ठि}",
-"TRAOE": "{^ठी}",
-"TRAEU": "{^ठे}",
-"TRAOEU": "{^ठै}",
-"TRO": "{^ठो}",
-"TRAOU": "{^ठौ}",
+"THREU": "{^ठि}",
+"THRAOE": "{^ठी}",
+"THRAEU": "{^ठे}",
+"THRAOEU": "{^ठै}",
+"THRO": "{^ठो}",
+"THRAOU": "{^ठौ}",
 "THEU": "{^थि}",
 "THAOE": "{^थी}",
 "THAEU": "{^थे}",
@@ -835,66 +874,42 @@ ConsonantsWithBindu=s({
 "SHAOEU": "{^शै}",
 "SHO": "{^शो}",
 "SHAOU": "{^शौ}",
-"KPWEU": "{^ङि}",
-"KPWAOE": "{^ङी}",
-"KPWAEU": "{^ङे}",
-"KPWAOEU": "{^ङै}",
-"KPWO": "{^ङो}",
-"KPWAOU": "{^ङौ}",
 "SKWHREU": "{^झि}",
 "SKWHRAOE": "{^झी}",
 "SKWHRAEU": "{^झे}",
 "SKWHRAOEU": "{^झै}",
 "SKWHRO": "{^झो}",
 "SKWHRAOU": "{^झौ}",
-"STPHEU": "{^ञि}",
-"STPHAOE": "{^ञी}",
-"STPHAEU": "{^ञे}",
-"STPHAOEU": "{^ञै}",
-"STPHO": "{^ञो}",
-"STPHAOU": "{^ञौ}",
-"TWREU": "{^टि}",
-"TWRAOE": "{^टी}",
-"TWRAEU": "{^टे}",
-"TWRAOEU": "{^टै}",
-"TWRO": "{^टो}",
-"TWRAOU": "{^टौ}",
-"TKPHEU": "{^ढि}",
-"TKPHAOE": "{^ढी}",
-"TKPHAEU": "{^ढे}",
-"TKPHAOEU": "{^ढै}",
-"TKPHO": "{^ढो}",
-"TKPHAOU": "{^ढौ}",
-"TPHREU": "{^णि}",
-"TPHRAOE": "{^णी}",
-"TPHRAEU": "{^णे}",
-"TPHRAOEU": "{^णै}",
-"TPHRO": "{^णो}",
-"TPHRAOU": "{^णौ}",
-"SKHREU": "{^षि}",
-"SKHRAOE": "{^षी}",
-"SKHRAEU": "{^षे}",
-"SKHRAOEU": "{^षै}",
-"SKHRO": "{^षो}",
-"SKHRAOU": "{^षौ}",
-"TKPEU": "{^डि}",
-"TKPAOE": "{^डी}",
-"TKPAEU": "{^डे}",
-"TKPAOEU": "{^डै}",
-"TKPO": "{^डो}",
-"TKPAOU": "{^डौ}",
+"TREU": "{^टि}",
+"TRAOE": "{^टी}",
+"TRAEU": "{^टे}",
+"TRAOEU": "{^टै}",
+"TRO": "{^टो}",
+"TRAOU": "{^टौ}",
+"TKHREU": "{^ढि}",
+"TKHRAOE": "{^ढी}",
+"TKHRAEU": "{^ढे}",
+"TKHRAOEU": "{^ढै}",
+"TKHRO": "{^ढो}",
+"TKHRAOU": "{^ढौ}",
+"TKREU": "{^डि}",
+"TKRAOE": "{^डी}",
+"TKRAEU": "{^डे}",
+"TKRAOEU": "{^डै}",
+"TKRO": "{^डो}",
+"TKRAOU": "{^डौ}",
 "WREU": "{^ड़ि}",
 "WRAOE": "{^ड़ी}",
 "WRAEU": "{^ड़े}",
 "WRAOEU": "{^ड़ै}",
 "WRO": "{^ड़ो}",
 "WRAOU": "{^ड़ौ}",
-"TKREU": "{^ढ़ि}",
-"TKRAOE": "{^ढ़ी}",
-"TKRAEU": "{^ढ़े}",
-"TKRAOEU": "{^ढ़ै}",
-"TKRO": "{^ढ़ो}",
-"TKRAOU": "{^ढ़ौ}",
+"WHREU": "{^ढ़ि}",
+"WHRAOE": "{^ढ़ी}",
+"WHRAEU": "{^ढ़े}",
+"WHRAOEU": "{^ढ़ै}",
+"WHRO": "{^ढ़ो}",
+"WHRAOU": "{^ढ़ौ}",
 "TEU": "{^ति}",
 "TAOE": "{^ती}",
 "TAEU": "{^ते}",
@@ -993,27 +1008,47 @@ ConsonantsWithBindu=s({
 
 #Added to base consonants to form conjuncts
 Virama=s({
-        '*':       '{^्}'
+        '*': '{^्}'
 	})
 
 #Add to all consonants/consonants+mitra to ass visarg
 Visarg=s({
-    "*G": "{^ः}"
+    "-G": "{^ः}"
         })
 
 #Add to all consonants/consonant+mitra where the default vowel nasalization would be a chandrabindu
 Chandrabindu=s({
-    "*B": "{^ँ}"
+    "-B": "{^ँ}"
         })
 
 #Add to all consonants/consonant+mitra where the default vowel nasalization would be a bindu
 Bindu=s({
-    "*B": "{^ं}"
+    "-B": "{^ं}"
         })
 
 #Add to all consonants/consonant+mitra where other nasalization is required (conjunct, velar, palatal, etc. - see https://openbooks.lib.msu.edu/basichindi/chapter/nasal-sounds-in-hindi/).  Uses same character as "bindu".
 Nasalization=s({
-    "*PB": "{^ं}"
+    "-PB": "{^ं}"
+        })
+
+#Add to all FS consonants/consonants+mitra to ass visarg
+FSVisarg=s({
+    "/-G": "{^ः}"
+        })
+
+#Add to all FS consonants/consonant+mitra where the default vowel nasalization would be a chandrabindu
+FSChandrabindu=s({
+    "/-B": "{^ँ}"
+        })
+
+#Add to all FS consonants/consonant+mitra where the default vowel nasalization would be a bindu
+FSBindu=s({
+    "/-B": "{^ं}"
+        })
+
+#Add to all FS consonants/consonant+mitra where other nasalization is required (conjunct, velar, palatal, etc. - see https://openbooks.lib.msu.edu/basichindi/chapter/nasal-sounds-in-hindi/).  Uses same character as "bindu".
+FSNasalization=s({
+    "/-PB": "{^ं}"
         })
 
 #Separate stroke to add special characters (virama, visarg, chandrabindu,bindu, Nasalisation
@@ -1029,7 +1064,43 @@ SpecialCharacters=s({
 
 # |: Compute the union of two dictionaries.
 # *: Compute the (Cartesian) product of two dictionaries. The 2 adjacent strokes are merged.
-dictionary = ConsonantsAndMitras | Vowels | VowelsStandalone | BaseConsonants*Virama | ConsonantsAndMitras*Nasalization | Vowels*Nasalization | ConsonantsAndMitras*Visarg | Vowels*Visarg | ConsonantsWithBindu*Bindu | ConsonantsWithChandraBindu*Chandrabindu | SpecialCharacters
+
+#Define Base Strokes
+dictionary =    ConsonantsAndMitras | \
+                Vowels | \
+                VowelsStandalone | \
+                SpecialCharacters
+#Define FingerSpelling FS Base Strokes
+dictionary =    dictionary | \
+                FSBaseConsonants |\
+                FSConsonantsAndMitras |\
+                FSConsonantsWithBindu |\
+                FSConsonantsWithChandrabindu
+
+#Add Virama option to all strokes
+dictionary =    dictionary | \
+                BaseConsonants*Virama | \
+                FSBaseConsonants*Virama
+                
+#Add Visarg option to all strokes
+dictionary =    dictionary | \
+                ConsonantsAndMitras*Visarg | \
+                FSConsonantsAndMitras*FSVisarg |\
+                Vowels*Visarg
+
+#Add Bindu/Chandrabindu to all strokes as appropriate
+dictionary =    dictionary | \
+                ConsonantsWithBindu*Bindu | \
+                ConsonantsWithChandraBindu*Chandrabindu | \
+                FSConsonantsWithBindu*FSBindu | \
+                FSConsonantsWithChandrabindu*FSChandrabindu
+
+#Add Consonant nasalisation to all strokes as appropriate
+dictionary =    dictionary | \
+                Vowels*Nasalization | \
+                ConsonantsAndMitras*Nasalization | \
+                FSConsonantsAndMitras*FSNasalization
+                
 
 # ======== More boilerplate (the lambda is required because plover-python-dictionary only accept objects with function type as the lookup function
 
