@@ -23,178 +23,177 @@ translation=context.translation
 # s(...): Creates a Dictionary object from a dict (or a list, for example, ["S"] is equivalent to {"S": "S"})
 
 FSConsonantsAndMitras=s({
-"KWFPLT": "{^क़}",
-"KWAUFPLT": "{^क़ा}",
-"KWEUFPLT": "{^क़ि}",
-"KWAOEFPLT": "{^क़ी}",
-"KWAOFPLT": "{^क़ु}",
-"KWUFPLT": "{^क़ू}",
-"KWEFPLT": "{^क़ृ}",
-"KWAEUFPLT": "{^क़े}",
-"KWAOEUFPLT": "{^क़ै}",
-"KWOFPLT": "{^क़ो}",
-"KWAOUFPLT": "{^क़ौ}",
-"WHFPLT": "{^ख़}",
-"WHAUFPLT": "{^ख़ा}",
-"WHEUFPLT": "{^ख़ि}",
-"WHAOEFPLT": "{^ख़ी}",
-"WHAOFPLT": "{^ख़ु}",
-"WHUFPLT": "{^ख़ू}",
-"WHEFPLT": "{^ख़ृ}",
-"WHAEUFPLT": "{^ख़े}",
-"WHAOEUFPLT": "{^ख़ै}",
-"WHOFPLT": "{^ख़ो}",
-"WHAOUFPLT": "{^ख़ौ}",
-"KPHRFPLT": "{^ग़}",
-"KPHRAUFPLT": "{^ग़ा}",
-"KPHREUFPLT": "{^ग़ि}",
-"KPHRAOEFPLT": "{^ग़ी}",
-"KPHRAOFPLT": "{^ग़ु}",
-"KPHRUFPLT": "{^ग़ू}",
-"KPHREFPLT": "{^ग़ृ}",
-"KPHRAEUFPLT": "{^ग़े}",
-"KPHRAOEUFPLT": "{^ग़ै}",
-"KPHROFPLT": "{^ग़ो}",
-"KPHRAOUFPLT": "{^ग़ौ}",
-"KPWFPLT": "{^ङ}",
-"KPWAUFPLT": "{^ङा}",
-"KPWEUFPLT": "{^ङि}",
-"KPWAOEFPLT": "{^ङी}",
-"KPWAOFPLT": "{^ङु}",
-"KPWUFPLT": "{^ङू}",
-"KPWEFPLT": "{^ङृ}",
-"KPWAEUFPLT": "{^ङे}",
-"KPWAOEUFPLT": "{^ङै}",
-"KPWOFPLT": "{^ङो}",
-"KPWAOUFPLT": "{^ङौ}",
-"STPHAUFPLT": "{^ञा}",
-"STPHFPLT": "{^ञ}",
-"STPHEUFPLT": "{^ञि}",
-"STPHAOEFPLT": "{^ञी}",
-"STPHAOFPLT": "{^ञु}",
-"STPHUFPLT": "{^ञू}",
-"STPHEFPLT": "{^ञृ}",
-"STPHAEUFPLT": "{^ञे}",
-"STPHAOEUFPLT": "{^ञै}",
-"STPHOFPLT": "{^ञो}",
-"STPHAOUFPLT": "{^ञौ}",
-"TPHRFPLT": "{^ण}",
-"TPHRAUFPLT": "{^णा}",
-"TPHREUFPLT": "{^णि}",
-"TPHRAOEFPLT": "{^णी}",
-"TPHRAOFPLT": "{^णु}",
-"TPHRUFPLT": "{^णू}",
-"TPHREFPLT": "{^णृ}",
-"TPHRAEUFPLT": "{^णे}",
-"TPHRAOEUFPLT": "{^णै}",
-"TPHROFPLT": "{^णो}",
-"TPHRAOUFPLT": "{^णौ}",
-"SKHRFPLT": "{^ष}",
-"SKHRAUFPLT": "{^षा}",
-"SKHREUFPLT": "{^षि}",
-"SKHRAOEFPLT": "{^षी}",
-"SKHRAOFPLT": "{^षु}",
-"SKHRUFPLT": "{^षू}",
-"SKHREFPLT": "{^षृ}",
-"SKHRAEUFPLT": "{^षे}",
-"SKHRAOEUFPLT": "{^षै}",
-"SKHROFPLT": "{^षो}",
-"SKHRAOUFPLT": "{^षौ}"
+"KW": "{^क़}",
+"KWAU": "{^क़ा}",
+"KWEU": "{^क़ि}",
+"KWAOE": "{^क़ी}",
+"KWAO": "{^क़ु}",
+"KWU": "{^क़ू}",
+"KWE": "{^क़ृ}",
+"KWAEU": "{^क़े}",
+"KWAOEU": "{^क़ै}",
+"KWO": "{^क़ो}",
+"KWAOU": "{^क़ौ}",
+"WH": "{^ख़}",
+"WHAU": "{^ख़ा}",
+"WHEU": "{^ख़ि}",
+"WHAOE": "{^ख़ी}",
+"WHAO": "{^ख़ु}",
+"WHU": "{^ख़ू}",
+"WHE": "{^ख़ृ}",
+"WHAEU": "{^ख़े}",
+"WHAOEU": "{^ख़ै}",
+"WHO": "{^ख़ो}",
+"WHAOU": "{^ख़ौ}",
+"KPHR": "{^ग़}",
+"KPHRAU": "{^ग़ा}",
+"KPHREU": "{^ग़ि}",
+"KPHRAOE": "{^ग़ी}",
+"KPHRAO": "{^ग़ु}",
+"KPHRU": "{^ग़ू}",
+"KPHRE": "{^ग़ृ}",
+"KPHRAEU": "{^ग़े}",
+"KPHRAOEU": "{^ग़ै}",
+"KPHRO": "{^ग़ो}",
+"KPHRAOU": "{^ग़ौ}",
+"KPW": "{^ङ}",
+"KPWAU": "{^ङा}",
+"KPWEU": "{^ङि}",
+"KPWAOE": "{^ङी}",
+"KPWAO": "{^ङु}",
+"KPWU": "{^ङू}",
+"KPWE": "{^ङृ}",
+"KPWAEU": "{^ङे}",
+"KPWAOEU": "{^ङै}",
+"KPWO": "{^ङो}",
+"KPWAOU": "{^ङौ}",
+"STPHAU": "{^ञा}",
+"STPH": "{^ञ}",
+"STPHEU": "{^ञि}",
+"STPHAOE": "{^ञी}",
+"STPHAO": "{^ञु}",
+"STPHU": "{^ञू}",
+"STPHE": "{^ञृ}",
+"STPHAEU": "{^ञे}",
+"STPHAOEU": "{^ञै}",
+"STPHO": "{^ञो}",
+"STPHAOU": "{^ञौ}",
+"TPHR": "{^ण}",
+"TPHRAU": "{^णा}",
+"TPHREU": "{^णि}",
+"TPHRAOE": "{^णी}",
+"TPHRAO": "{^णु}",
+"TPHRU": "{^णू}",
+"TPHRE": "{^णृ}",
+"TPHRAEU": "{^णे}",
+"TPHRAOEU": "{^णै}",
+"TPHRO": "{^णो}",
+"TPHRAOU": "{^णौ}",
+"SKHR": "{^ष}",
+"SKHRAU": "{^षा}",
+"SKHREU": "{^षि}",
+"SKHRAOE": "{^षी}",
+"SKHRAO": "{^षु}",
+"SKHRU": "{^षू}",
+"SKHRE": "{^षृ}",
+"SKHRAEU": "{^षे}",
+"SKHRAOEU": "{^षै}",
+"SKHRO": "{^षो}",
+"SKHRAOU": "{^षौ}"
 })
 
 FSConsonantsWithChandrabindu=s({
-"KWFPLT": "{^क़}",
-"KWAUFPLT": "{^क़ा}",
-"KWAOFPLT": "{^क़ु}",
-"KWUFPLT": "{^क़ू}",
-"KWEFPLT": "{^क़ृ}",
-"WHFPLT": "{^ख़}",
-"WHAUFPLT": "{^ख़ा}",
-"WHAOFPLT": "{^ख़ु}",
-"WHUFPLT": "{^ख़ू}",
-"WHEFPLT": "{^ख़ृ}",
-"KPHRFPLT": "{^ग़}",
-"KPHRAUFPLT": "{^ग़ा}",
-"KPHRAOFPLT": "{^ग़ु}",
-"KPHRUFPLT": "{^ग़ू}",
-"KPHREFPLT": "{^ग़ृ}",
-"KPWFPLT": "{^ङ}",
-"KPWAUFPLT": "{^ङा}",
-"KPWAOFPLT": "{^ङु}",
-"KPWUFPLT": "{^ङू}",
-"KPWEFPLT": "{^ङृ}",
-"STPHFPLT": "{^ञ}",
-"STPHAUFPLT": "{^ञा}",
-"STPHAOFPLT": "{^ञु}",
-"STPHUFPLT": "{^ञू}",
-"STPHEFPLT": "{^ञृ}",
-"TPHRFPLT": "{^ण}",
-"TPHRAUFPLT": "{^णा}",
-"TPHRAOFPLT": "{^णु}",
-"TPHRUFPLT": "{^णू}",
-"TPHREFPLT": "{^णृ}",
-"SKHRFPLT": "{^ष}",
-"SKHRAUFPLT": "{^षा}",
-"SKHRAOFPLT": "{^षु}",
-"SKHRUFPLT": "{^षू}",
-"SKHREFPLT": "{^षृ}"
+"KW": "{^क़}",
+"KWAU": "{^क़ा}",
+"KWAO": "{^क़ु}",
+"KWU": "{^क़ू}",
+"KWE": "{^क़ृ}",
+"WH": "{^ख़}",
+"WHAU": "{^ख़ा}",
+"WHAO": "{^ख़ु}",
+"WHU": "{^ख़ू}",
+"WHE": "{^ख़ृ}",
+"KPHR": "{^ग़}",
+"KPHRAU": "{^ग़ा}",
+"KPHRAO": "{^ग़ु}",
+"KPHRU": "{^ग़ू}",
+"KPHRE": "{^ग़ृ}",
+"KPW": "{^ङ}",
+"KPWAU": "{^ङा}",
+"KPWAO": "{^ङु}",
+"KPWU": "{^ङू}",
+"KPWE": "{^ङृ}",
+"STPH": "{^ञ}",
+"STPHAU": "{^ञा}",
+"STPHAO": "{^ञु}",
+"STPHU": "{^ञू}",
+"STPHE": "{^ञृ}",
+"TPHR": "{^ण}",
+"TPHRAU": "{^णा}",
+"TPHRAO": "{^णु}",
+"TPHRU": "{^णू}",
+"TPHRE": "{^णृ}",
+"SKHR": "{^ष}",
+"SKHRAU": "{^षा}",
+"SKHRAO": "{^षु}",
+"SKHRU": "{^षू}",
+"SKHRE": "{^षृ}"
 })
 
 FSConsonantsWithBindu=s({
-"KWEUFPLT": "{^क़ि}",
-"KWAOEFPLT": "{^क़ी}",
-"KWAEUFPLT": "{^क़े}",
-"KWAOEUFPLT": "{^क़ै}",
-"KWOFPLT": "{^क़ो}",
-"KWAOUFPLT": "{^क़ौ}",  
-"WHEUFPLT": "{^ख़ि}",
-"WHAOEFPLT": "{^ख़ी}",
-"WHAEUFPLT": "{^ख़े}",
-"WHAOEUFPLT": "{^ख़ै}",
-"WHOFPLT": "{^ख़ो}",
-"WHAOUFPLT": "{^ख़ौ}",
-"KPHREUFPLT": "{^ग़ि}",
-"KPHRAOEFPLT": "{^ग़ी}",
-"KPHRAEUFPLT": "{^ग़े}",
-"KPHRAOEUFPLT": "{^ग़ै}",
-"KPHROFPLT": "{^ग़ो}",
-"KPHRAOUFPLT": "{^ग़ौ}", 
-"KPWEUFPLT": "{^ङि}",
-"KPWAOEFPLT": "{^ङी}",
-"KPWAEUFPLT": "{^ङे}",
-"KPWAOEUFPLT": "{^ङै}",
-"KPWOFPLT": "{^ङो}",
-"KPWAOUFPLT": "{^ङौ}",
-"STPHEUFPLT": "{^ञि}",
-"STPHAOEFPLT": "{^ञी}",
-"STPHAEUFPLT": "{^ञे}",
-"STPHAOEUFPLT": "{^ञै}",
-"STPHOFPLT": "{^ञो}",
-"STPHAOUFPLT": "{^ञौ}",
-"TPHREUFPLT": "{^णि}",
-"TPHRAOEFPLT": "{^णी}",
-"TPHRAEUFPLT": "{^णे}",
-"TPHRAOEUFPLT": "{^णै}",
-"TPHROFPLT": "{^णो}",
-"TPHRAOUFPLT": "{^णौ}",
-"SKHREUFPLT": "{^षि}",
-"SKHRAOEFPLT": "{^षी}",
-"SKHRAEUFPLT": "{^षे}",
-"SKHRAOEUFPLT": "{^षै}",
-"SKHROFPLT": "{^षो}",
-"SKHRAOUFPLT": "{^षौ}"
+"KWEU": "{^क़ि}",
+"KWAOE": "{^क़ी}",
+"KWAEU": "{^क़े}",
+"KWAOEU": "{^क़ै}",
+"KWO": "{^क़ो}",
+"KWAOU": "{^क़ौ}",  
+"WHEU": "{^ख़ि}",
+"WHAOE": "{^ख़ी}",
+"WHAEU": "{^ख़े}",
+"WHAOEU": "{^ख़ै}",
+"WHO": "{^ख़ो}",
+"WHAOU": "{^ख़ौ}",
+"KPHREU": "{^ग़ि}",
+"KPHRAOE": "{^ग़ी}",
+"KPHRAEU": "{^ग़े}",
+"KPHRAOEU": "{^ग़ै}",
+"KPHRO": "{^ग़ो}",
+"KPHRAOU": "{^ग़ौ}", 
+"KPWEU": "{^ङि}",
+"KPWAOE": "{^ङी}",
+"KPWAEU": "{^ङे}",
+"KPWAOEU": "{^ङै}",
+"KPWO": "{^ङो}",
+"KPWAOU": "{^ङौ}",
+"STPHEU": "{^ञि}",
+"STPHAOE": "{^ञी}",
+"STPHAEU": "{^ञे}",
+"STPHAOEU": "{^ञै}",
+"STPHO": "{^ञो}",
+"STPHAOU": "{^ञौ}",
+"TPHREU": "{^णि}",
+"TPHRAOE": "{^णी}",
+"TPHRAEU": "{^णे}",
+"TPHRAOEU": "{^णै}",
+"TPHRO": "{^णो}",
+"TPHRAOU": "{^णौ}",
+"SKHREU": "{^षि}",
+"SKHRAOE": "{^षी}",
+"SKHRAEU": "{^षे}",
+"SKHRAOEU": "{^षै}",
+"SKHRO": "{^षो}",
+"SKHRAOU": "{^षौ}"
 })
 
-FSBaseConsonants=s({
-"KWFPLT": "{^क़}",
-"WHFPLT": "{^ख़}",
-"KPHRFPLT": "{^ग़}",
-"KPWFPLT": "{^ङ}",
-"STPHFPLT": "{^ञ}",
-"TPHRFPLT": "{^ण}",
-"SKHRFPLT": "{^ष}",
+FSBaseConsonants=s({    
+"KW": "{^क़}",
+"WH": "{^ख़}",
+"KPHR": "{^ग़}",
+"KPW": "{^ङ}",
+"STPH": "{^ञ}",
+"TPHR": "{^ण}",
+"SKHR": "{^ष}",
 })
-
 
 ConsonantsAndMitras=s({
 "K": "{^क}",
@@ -562,19 +561,19 @@ ConsonantsAndMitras=s({
 "HAOU": "{^हौ}"
         })
 
-VowelsStandalone=s({
-"A*": "अ",
-"A*EU": "ए",
-"AO*": "उ",
-"AO*E": "ई",
-"AO*EU": "ऐ",
-"AO*U": "औ",
-"A*U": "आ",
-"*E": "ऋ",
-"*EU": "इ",
-"O*": "ओ",
-"*U": "ऊ"
-        })
+#VowelsStandalone=s({
+#"A*": "अ",
+#"A*EU": "ए",
+#"AO*": "उ",
+#"AO*E": "ई",
+#"AO*EU": "ऐ",
+#"AO*U": "औ",
+#"A*U": "आ",
+#"*E": "ऋ",
+#"*EU": "इ",
+#"O*": "ओ",
+#"*U": "ऊ"
+#        })
 
 Vowels=s({
 "A": "{^अ}",
@@ -1006,10 +1005,23 @@ ConsonantsWithBindu=s({
 "O": "{^ओ}"
         })
 
+#Fix the below to avoid conflicts with words which use some of these...
+#Ideas:  
+# Use * for all finger spelling 
+#       (problem: Some words may already be using these?: solution: redefine fingerspelling to *R) 
+#       (problem: would have to redefine adding a virama: solution: use -S (really *S) which is unused in this context)
+#       (problem: some end of word sounds have been defined to use * to help with word boundaries: solution: use *R instead of * for fingerspelling)
+#       (problem: maybe... The current -FPLT for unused LHS characters may be very cumbersome.  Since we are redefining fingerspelling to *R, maybe just make those *R also)
+# Use -FPLT for all finger spellings (as we did already for characters that we didn't to use LHS)
+#       (problem: How to add nasalization, etc. to a fingerspell stroke)
+# Other Problems
+#       If all finger spelling requires *R, then only explicitly defined Hindi words will ever work.  Is there any reasonable solution to this?  I think in English Steno systems the RHS is used extensively to define suffixes and a number of methods are used to create prefixes.
+
+
 #Added to base consonants to form conjuncts
 Virama=s({
-        '*': '{^्}'
-	})
+        '-S': '{^्}'
+ 	})
 
 #Add to all consonants/consonants+mitra to ass visarg
 Visarg=s({
@@ -1031,7 +1043,7 @@ Nasalization=s({
     "-PB": "{^ं}"
         })
 
-#Add to all FS consonants/consonants+mitra to ass visarg
+#Add to all FS consonants/consonants+mitra to add visarg
 FSVisarg=s({
     "/-G": "{^ः}"
         })
@@ -1060,46 +1072,57 @@ SpecialCharacters=s({
         "TPH*RBGS": "{^ं}"
         })
 
+#Make Fingerspelling stroke addition
+fingerspell=s({
+        "*R":"",
+        })
+
+#Make Fingerspelling stroke addition for standalone vowels
+fingerspellvowel=s({
+        "-R":"",
+        })
+
 # ======== Main definitions.
 
 # |: Compute the union of two dictionaries.
 # *: Compute the (Cartesian) product of two dictionaries. The 2 adjacent strokes are merged.
 
 #Define Base Strokes
-dictionary =    ConsonantsAndMitras | \
-                Vowels | \
-                VowelsStandalone | \
+
+dictionary =    ConsonantsAndMitras*fingerspell
+
+dictionary =    dictionary | \
+                Vowels*fingerspell | \
                 SpecialCharacters
+#                VowelsStandalone | \
+
 #Define FingerSpelling FS Base Strokes
 dictionary =    dictionary | \
-                FSBaseConsonants |\
-                FSConsonantsAndMitras |\
-                FSConsonantsWithBindu |\
-                FSConsonantsWithChandrabindu
+                FSConsonantsAndMitras*fingerspell
 
 #Add Virama option to all strokes
 dictionary =    dictionary | \
-                BaseConsonants*Virama | \
-                FSBaseConsonants*Virama
+                 BaseConsonants*Virama*fingerspell | \
+                 FSBaseConsonants*Virama*fingerspell
                 
 #Add Visarg option to all strokes
 dictionary =    dictionary | \
-                ConsonantsAndMitras*Visarg | \
-                FSConsonantsAndMitras*FSVisarg |\
-                Vowels*Visarg
+                ConsonantsAndMitras*Visarg*fingerspell | \
+                FSConsonantsAndMitras*Visarg*fingerspell |\
+                Vowels*Visarg*fingerspell
 
 #Add Bindu/Chandrabindu to all strokes as appropriate
 dictionary =    dictionary | \
-                ConsonantsWithBindu*Bindu | \
-                ConsonantsWithChandraBindu*Chandrabindu | \
-                FSConsonantsWithBindu*FSBindu | \
-                FSConsonantsWithChandrabindu*FSChandrabindu
+                ConsonantsWithBindu*Bindu*fingerspell | \
+                ConsonantsWithChandraBindu*Chandrabindu*fingerspell | \
+                FSConsonantsWithBindu*Bindu*fingerspell | \
+                FSConsonantsWithChandrabindu*Chandrabindu*fingerspell
 
 #Add Consonant nasalisation to all strokes as appropriate
 dictionary =    dictionary | \
-                Vowels*Nasalization | \
-                ConsonantsAndMitras*Nasalization | \
-                FSConsonantsAndMitras*FSNasalization
+                Vowels*Nasalization*fingerspell | \
+                ConsonantsAndMitras*Nasalization*fingerspell | \
+                FSConsonantsAndMitras*Nasalization*fingerspell
                 
 
 # ======== More boilerplate (the lambda is required because plover-python-dictionary only accept objects with function type as the lookup function
