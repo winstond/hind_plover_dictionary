@@ -3,7 +3,7 @@
 ## PLEASE NOTE: Undergoing significant updates...
 The below documentation refers to releast v1.0 which is avaiable for download.  Commits after that will reflect changes that break some of the below documentation.  Please be patient as we create a proper steno dictionary!  Documentation will be updated on next release.
 
-A steno dictionary for writing Hindi in the **Devanagari** script using Plover Steno.
+A steno dictionary for writing Hindi in the __Devanagari__ script using Plover Steno.
 
 ## Usage
 
@@ -11,7 +11,7 @@ A steno dictionary for writing Hindi in the **Devanagari** script using Plover S
 2. In Plover, add the dictionary.  It does not require any add-ins.
 3. When enabled, you can now output hindi characters using Plover.
 
-Example: To output कीं the stroke would be KAO*EB.  Breaking this down... K is for the क, AOE adds the की matra (long "e" sound in English), and *B added to any stroke adds the "bindu" character (or chandrabindu where appropriate).
+Example: To output कीं the stroke would be KAO\*EB.  Breaking this down... K is for the क, AOE adds the की matra (long "e" sound in English), and \*B added to any stroke adds the "bindu" character (or chandrabindu where appropriate).
 
 ## Basic operation of this dictionary:
 
@@ -59,7 +59,7 @@ To add bindu/chandrabindu nasalisation to your stroke, simply add `*B` to your s
 
 |नँ|नाँ|निं|नीं|नुँ|नूँ|नृँ|नें|नैं|नेौ|नौं|
 |---|---|---|---|---|---|---|---|---|---|---|
-| TPH*B | TPHA*UB | TPH*EUB | TPHAO*EB | TPHAO*B | TPH*UB | TPH*EB | TPHA*EUB | TPHAO*EUB | TPHO*B | TPHAO*UB |
+| TPH\*B | TPHA\*UB | TPH\*EUB | TPHAO\*EB | TPHAO\*B | TPH\*UB | TPH\*EB | TPHA\*EUB | TPHAO\*EUB | TPHO\*B | TPHAO\*UB |
 
 ### Adding Visarg
 
@@ -67,19 +67,19 @@ There is a symbol in Devanagari that represents an "echoing" of the vowel sound 
 
 |कः|अः|
 |---|---|
-| K*G | A*G |
+| K\*G | A\*G |
 
 ### Conjunct Consonants
 
 Finally, Devanagari has a concept of joining consonants together to form a single character  This is typically done to show that the default अ sound should not be used between these two consonants.
 
-To create a conjunct, add `*` to the first consonant stroke - this adds a special character called a *halant* to the character.  When you stroke the next consonant, the consonants will join.  Here are two common examples:
+To create a conjunct, add `*` to the first consonant stroke - this adds a special character called a _halant_ to the character.  When you stroke the next consonant, the consonants will join.  Here are two common examples:
 
 |स्त|स्क|
 |---|---|
-| S*/T | S*/K |
+| S\*/T | S\*/K |
 
-You might recognize these as they are used in नमस्ते (Namaste, "I bow to you"), and नमस्कार (Namaskār, "I bow to you") - two common greetings.  There are *many* conjunct consonants used in Hindi words.  This stroke technique will work for most.  However there are some conjuncts that are typically represented by using a dot above the horizontal line instead (see **Other Nasalisation** below).
+You might recognize these as they are used in नमस्ते (Namaste, "I bow to you"), and नमस्कार (Namaskār, "I bow to you") - two common greetings.  There are _many_ conjunct consonants used in Hindi words.  This stroke technique will work for most.  However there are some conjuncts that are typically represented by using a dot above the horizontal line instead (see __Other Nasalisation__ below).
 
 ### Other nasalisation with anusvaar (consonant, nasal conjuncts, etc.)
 
@@ -87,7 +87,7 @@ An anusvaar (looks like a bindu, single dot above) may be added for other nasali
 
 |कं|खं|
 |---|---|
-| K*PB | KWH*PB |
+| K\*PB | KWH\*PB |
 
 ### Special Characters as second strokes
 
@@ -95,10 +95,10 @@ You may occassionally need to add a special character with a second stroke.  In 
 
 |Name|Stoke|Example Stroke|Example Output|
 |---|---|---|---|
-| Virama | SR*RBGS | K/SR*RBGS | क् |
-| Bindu | PW*RBGS | K/PW*RBGS | कं |
-| Chandrabindu | KH*RBGS | K/KH*RBGS | कँ |
-| Visarg | S*RBGS | K/S*RBGS | कः |
+| Virama | SR\*RBGS | K/SR\*RBGS | क् |
+| Bindu | PW\*RBGS | K/PW\*RBGS | कं |
+| Chandrabindu | KH\*RBGS | K/KH\*RBGS | कँ |
+| Visarg | S\*RBGS | K/S\*RBGS | कः |
 
 And that's it!
 
@@ -113,6 +113,3 @@ If you already know English Steno, you may find this dictionary to be a much mor
 I was also gratified that there were enough consonant/vowel sounds that are the same (or close) in English that I was able to use familiar strokes to define them.  If you already know English Steno with a common theory like Plover or Phoenix you will likely notice this and it should make learning these strokes much faster for you.
 
 I did certainly take some liberties!  For example, I eliminated the usual English stroke for hard "g", TKPW.  Never much liked it.  Instead I used KP for the hard "g" sound.  In my English theory KP is used for "ex" prefix so it was available!  Hindi has more consonant sounds than English, and some of them are very similar to each other with one being "aspirated" for example.  I did the best I could to think of logical/intuitive derivative strokes.
-
-
-
