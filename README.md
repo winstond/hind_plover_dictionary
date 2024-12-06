@@ -1,7 +1,16 @@
 # hind_plover_dictionary
 
+## The Latest!
+The readme below this section is completely outdated.  It can be disregarded (although it does give a flavor for the strokes that will be used for hindi sounds and characters).
+
+The latest commits include a fingerspelling only dictionary.  Take a look at "hindi_fingerspell.json"  It uses some of the below stroke concepts but everything would need to have \*R added to the stroke or you won't get any output.  If you review it, you'll be able to see how to fingerspell Devanagari characters with mitras, nasalisation, visarg, etc.
+
+We have words!  Take a look at "hindi_words.json" to view our first word dictionary.  It currently has just under 4,000 words.  This is basically UNTESTED.  As in, the strokes will work, but I have no idea if it is full of conflicts or word boundary errors, etc.  Therefore, it could still undergo serious changes if for example I change how I'm stroking a consonant or what have you.
+
+Documentation on the Left Hand Side (beginning consonant sounds), Right Hand Side (ending consonant sounds), Vowels, etc. is a work in progress.  You can view "LHS.md" and "RHS.md" in the repo to see what is documented so far.  It's pretty rough.
+
 ## PLEASE NOTE: Undergoing significant updates...
-The below documentation refers to releast v1.0 which is avaiable for download.  Commits after that will reflect changes that break some of the below documentation.  Please be patient as we create a proper steno dictionary!  Documentation will be updated on next release.
+The below documentation refers to release v1.0 which is avaiable for download.  Commits after that will reflect changes that break some of the below documentation.  Please be patient as we create a proper steno dictionary!  Documentation will be updated on next release.
 
 A steno dictionary for writing Hindi in the __Devanagari__ script using Plover Steno.
 
