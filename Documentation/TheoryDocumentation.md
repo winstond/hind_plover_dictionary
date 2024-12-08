@@ -42,6 +42,7 @@ Left hand side means here the consonant sound when beginning a word or syllable 
 Left Hand Side for the base consonant sounds (i.e. the consonants in the alphabet only).  Listed in dictionary order.
 
 |Sound-Devanagari|Sound-Roman|STENO|Note|
+|---|---|---|---|
 |क,क़|k-,q-|K*R|Use for both in words.|
 |ख,ख़|kh-|KWH|Use for both in words.|
 |ग,ग़|g|KP|Use for both in words.|
