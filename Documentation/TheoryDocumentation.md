@@ -39,11 +39,74 @@ Left hand side means here the consonant sound when beginning a word or syllable 
 
 #### Base Consonants
 
-Left Hand Side for the base consonant sounds (i.e. the consonants in the alphabet only)
+Left Hand Side for the base consonant sounds (i.e. the consonants in the alphabet only).  Listed in dictionary order.
 
-#### Additional Consonant Sounds/Spellings
+|Sound-Devanagari|Sound-Roman|STENO|Note|
+|क,क़|k-,q-|K*R|Use for both in words.|
+|ख,ख़|kh-|KWH|Use for both in words.|
+|ग,ग़|g|KP|Use for both in words.|
+|घ|gh|KPH||
+|च|ch|KH||
+|छ|chh|KHR||
+|ज|j|SKWR||
+|ज्ञ|gy-|KPW|Included in the alphabet in many textbooks, but technically a conjuct of ज and ञ.  Sound is irregular in Hindi (like Gaya).|
+|ज़|z|SWR||
+|झ|jh|SKWHR||
+|ट|t|TR||
+|ठ|th|THR||
+|ड|d|TKR||
+|ड़|r|WR|Not typically found in word initial position.|
+|ढ|dh|TKHR||
+|ढ़|rdh|WHR|Not typically found in word initial position.|
+|ण|n-|TPH|Not typically found in word initial position. On the rare occassion when this starts a syllable, it will be stroked same as न.|
+|त|t|T||
+|थ|th|TH||
+|द|d|TK||
+|ध|dh|ध||
+|न|n|TPH||
+|प|p|P||
+|फ|ph|PHR||
+|फ़|f|फ़||
+|ब|b|PW||
+|भ|bh|PWH||
+|म|m|PH||
+|य|y|KWR||
+|र|r|R||
+|ल|l|HR||
+|व|v|W||
+|श,ष|sh-|SH|Use for both in words.|
+|स|s|S||
+|ह|h|H||
+
+#### Additional Left Hand Side Consonant Sounds/Spellings
 
 Left Hand Side for additionaly consonant sounds (i.e. consonant sounds beyond the alphabet only such as combined sounds)
+
+|Sound-Devanagari|Sound-Roman|STENO|Note|
+|---|---|---|---|
+|भ्र|bhr-|PWHR||
+|ब्ल|bl-|PWHR||
+|द्व|dv-TKW||
+|ग्र|gr-|KPR||
+|क्र|kr-|KR||
+|क्ष|ksh-|SKH||
+|प्र|pr-|PR||
+|श्र|shr-|SHR||
+|स्क|sk-|SK||
+|स्कृ|skr-|SKR||
+|स्न|sn-|STPH||
+|स्प|sp-|SP||
+|स्त or स्ट|st-|ST||
+|स्थ|sth-|ST||
+|स्व|sv-|SW||
+|स्य|sy-|SAOE/KWR|Sounds like see/ya|
+|त्र and ट्र|tr-|TR|Using TR for now, which risks conflict with ट.  Monitor for conflicts.|
+|वृ|vr-|WR|This will conflict directly with ड़ so we'll see if this works out.|
+|व्य|vy-|KPWR|This typically sounds like "ve/ya" (except when followed by ng (nasalisation+ग) where it just sounds like veng)|
+
+#### Conjuct Consonant Rules
+
+Split syllables on the conjunct (first conjunct ends syllable, second conjunct starts syllable).  There may be exceptions to this rule.
 
 ### Right Hand Side
 
@@ -61,7 +124,7 @@ Right Hand Side for additionaly consonant sounds (i.e. consonant sounds beyond t
 
 #### Vowel Omission
 
-A quick note on the default _a_ sound in Hindi.  We will follow the convention of ommiting the vowel in these strokes.  So, for example a syllable that consists of consonant-defaul_a_sound-consonant will be stroked using just the left hand side and right hand side consonant.  However, when the default _a_ vowel sound begins or ends a syllable/word, it will be included in the stroke.
+A quick note on the default _a_ sound in Hindi.  We will follow the convention of ommiting the vowel in these strokes.  So, for example a syllable that consists of consonant-defaul_a_sound-consonant or consonant-default_a_sound will be stroked using just the left hand side, ommiting the vowel stroke, and the right hand side consonant if required.  However, when the default _a_ vowel sound begins a syllable/word or ends a word, it will be included in the stroke.
 
 #### Base
 
