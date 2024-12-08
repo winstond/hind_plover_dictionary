@@ -11,7 +11,17 @@ For the remainder of this document, it is assumed that the reader knows Hindi an
 
 ## Theory Reference
 
-Theory reference...
+### Introduction
+
+Writing Hindi Devanagari is possible, but quite painful using a keyboard.  Many Hindi speakers when typing don't even bother with Devanagari and symply type the roman letter equivalents (usually refered to as "romanagari").  Some phone keyboards will offer to replace romanagari with devanagari so that can be a workaround.  Then again, romanagari doesn't always word to uniquely identify devanagari words as Hindi has sounds that don't exist in English so romanagari is at best an approximate.
+
+I was looking for a way to write Devanagari with at least some reasonable speed on the computer.  Fortunately, the Plover CAT software (see below description) supports outputing any unicode character.
+
+Although Hindi is quite different from English in many ways, fortunately there is a large overlap in sounds (there are only a handful of sounds in Hindi that don't exist in English), and Hindi, like English, does not have the kind of "tone rules" that you might find in languages like Mandarin.  Therefore, it turns out that the same Steno layout used for English can be adapted to use for Hindi!
+
+This is a brand new theory.  I have no idea what the speed capability might be.  If this theory can make writing Devanagari faster and easier, then I will consider it a success and use it regularly.
+
+If you are here and plan to use this theory, I'd love to hear from you.  If you manage to achieve any speed greater than 60wpm, I definitely want to hear from your! You can find me on the Plover Discord Server, with all conversations about this Steno Theory happening in the \#hindi-हिन्दी channel.  See you there!
 
 ### Keyboard Layout
 
@@ -83,6 +93,8 @@ Left Hand Side for the base consonant sounds (i.e. the consonants in the alphabe
 
 Left Hand Side for additionaly consonant sounds (i.e. consonant sounds beyond the alphabet only such as combined sounds)
 
+**All of these need to be checked to see how they behave in the middle of words.  Will they all follow Conjunct Consonant Rules?**
+
 |Sound-Devanagari|Sound-Roman|STENO|Note|
 |---|---|---|---|
 |भ्र|bhr-|PWHR||
@@ -102,10 +114,10 @@ Left Hand Side for additionaly consonant sounds (i.e. consonant sounds beyond th
 |स्व|sv-|SW||
 |स्य|sy-|SAOE/KWR|Sounds like see/ya|
 |त्र and ट्र|tr-|TR|Using TR for now, which risks conflict with ट.  Monitor for conflicts.|
-|वृ|vr-|WR|This will conflict directly with ड़ so we'll see if this works out.|
-|व्य|vy-|KPWR|This typically sounds like "ve/ya" (except when followed by ng (nasalisation+ग) where it just sounds like veng)|
+|वृ|vr-|WR|**Decide if this is beginning of word only.  When in the middle of a word, it could also be split.** This will conflict directly with ड़ so we'll see if this works out.|
+|व्य|vy-|KPWR|Beginning of word only (see [Conjunct Consonant Rules](#conjunct-consonant-rules).).  This typically sounds like "ve/ya" (except when followed by ng (nasalisation+ग) where it just sounds like veng)|
 
-#### Conjuct Consonant Rules
+#### Conjunct Consonant Rules
 
 Split syllables on the conjunct (first conjunct ends syllable, second conjunct starts syllable).  There may be exceptions to this rule.
 
