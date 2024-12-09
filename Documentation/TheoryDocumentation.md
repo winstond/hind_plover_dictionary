@@ -43,7 +43,7 @@ For the balance of this document, it will be assumed that you have a steno machi
 
 ### Greedy or Non-Greedy
 
-Most English theories tend to default to a "greedy" approach to what to include in a syllable stroke; meaning, try to include as many sounds in the stroke as possible using the RHS to capture more of the word (ex. "falter" might be stroked as TPAUL/T-R (non-greedy) or TPAULT/-R (greedy)).  For Hindi, I have so far found it bemore natural to use a non-greedy approach.  I have found that a more greedy approach did not seem to work as well as it does in English Steno.  It is possible that this will make the theory more stroke intensive.  We will be looking for opportunities to incorporate short cuts and possible some greedy rules to reduce the number of strokes needed.
+Most English theories tend to default to a "greedy" approach to what to include in a syllable stroke; meaning, try to include as many sounds in the stroke as possible using the RHS to capture more of the word (ex. "falter" might be stroked as TPAUL/T-R (non-greedy) or TPAULT/-R (greedy)).  For Hindi, I have so far found it to be more natural to use a non-greedy approach.  I have found that a more greedy approach did not seem to work as well as it does in English Steno.  It is possible that this will make the theory more stroke intensive.  I will be looking for opportunities to incorporate short cuts and possibly some greedy rules to reduce the number of strokes needed.
 
 ### Consonant Sounds and Spelling
 
@@ -77,11 +77,11 @@ Left Hand Side for the base consonant sounds (i.e. the consonants in the alphabe
 |त|t|T||
 |थ|th|TH||
 |द|d|TK||
-|ध|dh|ध||
+|ध|dh|TKH||
 |न|n|TPH||
 |प|p|P||
 |फ|ph|PHR||
-|फ़|f|फ़||
+|फ़|f|TP||
 |ब|b|PW||
 |भ|bh|PWH||
 |म|m|PH||
@@ -95,15 +95,15 @@ Left Hand Side for the base consonant sounds (i.e. the consonants in the alphabe
 
 #### Conjunct Consonant Rule
 
-Split a word intro strokes on a conjunct character.  This means that when there is a mid-word conjunct, the first member of conjunct ends a syllable stroke and the second member conjunct starts the next syllable stroke.  The primary exception to this rule will be 
+The conjunct consonant rule is that you split a word into strokes on a conjunct character.  This means that when there is a mid-word conjunct, the first member of conjunct ends the first syllable stroke and the second member of the conjunct starts the next syllable stroke.
 
-Note: This is the current rule, but is under consideration.  It is possible that strokes will be created where the entire conjunct is used to start the second syllable either as an alternative stroke or when there is a clear LHS stroke option for the conjunct (ex. स्क = SK, see [Additional Left Hand Side Consonant Sounds/Spellings](#additional-left-hand-side-consonant-soundsspellings))
+Note: This is the current rule, but it is under consideration.  It is possible that strokes will be created where the entire conjunct is used to start the second syllable either as an alternative stroke or when there is a clear LHS stroke option for the conjunct (ex. स्क = SK, see [Additional Left Hand Side Consonant Sounds/Spellings](#additional-left-hand-side-consonant-soundsspellings))
 
 #### Additional Left Hand Side Consonant Sounds/Spellings
 
 Left Hand Side for additionaly consonant sounds (i.e. consonant sounds beyond the alphabet only such as combined sounds)
 
-Unless noted, the below strokes will respect the [Conjunct Consonant Rule](#conjunct-consonant-rule).  Therefore, the below will always be used for start of word, but may not always be used when splitting syllables.  When a conjunct stroke does not follow the conjunct consonant rule, that means when found mid-word the stroke will start the next syllable rather than being split.
+Unless noted, the below strokes will respect the [Conjunct Consonant Rule](#conjunct-consonant-rule).  Therefore, the below will always be used for start of word, but may not always be used when splitting syllables.
 
 TODO: Review each of the below to determine which follow the Conjunct Consonant Rule.
 
@@ -148,16 +148,18 @@ A quick note on the default _a_ sound in Hindi.  We will follow the convention o
 
 #### Vowel Sounds and Spelling - Concepts
 
+Vowel sounds will typically be stroked using the thumbs of each hand on the vowel keys on the steno machine (the bottom row).
+
 When stroking a word, you will typically be stroking full syllables (beginning consonant sound + vowel sound + ending consonant sound [if any]).  The output will be an appropriate Devanagari _maatra_ attached to the beginning consonant for that vowel sound.  Reminder: The default _a_ (schwa) sound is automatically assumed and therefore no maatra would appear.  This would apply to most syllables you stroke.  
 
 However, we also have to consider the following cases:
-1. How is a vowel sound strokes when the syllable starts with a vowel sound.
-2. Is a vowel sound stroked any differently when there is no ending consonant to the syllable?
-3. Is a vowel sound stroked any differently when the final syllable in the word ends in an audible vowel sound?
+1. How is a vowel sound stroked when the syllable starts with a vowel sound.
+2. Is a vowel sound stroked any differently when there is no ending consonant at the end of the syllable (i.e. the syllable ends with a vowel sound)?
+3. Is a vowel sound stroked any differently when the final syllable in the word ends in a vowel sound?
 
 Having different stroke patterns for the same vowel sound in cases like these is used by some English theories to help avoid [word-boundary errors](https://www.artofchording.com/multistroke/prefixes-and-suffixes.html#word-boundary-errors).  Therefore, we will do the same in this theory when needed to avoid word-boundary errors.
 
-We also have to consider nasalization.  Both vowel and consonant sounds can have nasalisation indicated in Devanagari by Bindu/Chandrabindu for vowel nasalisation and Anusvar (looks the same as a Bindu) for consonant nasalization.  Nasalization will typically be treated as the same as adding an "n" sound, with the exception that for some words consonant nasalisation will be treated as adding an "m" sound.
+We also have to consider nasalization.  Both vowel and consonant sounds can have nasalization indicated in Devanagari by Bindu/Chandrabindu for vowel nasalization and Anusvar (looks the same as a Bindu) for consonant nasalization.  Nasalization will typically be treated as the same as adding an "n" sound, with the exception that for some words consonant nasalisation will be treated as adding an "m" sound.
 
 Keeping this in mind, our documentation for vowel sounds will include:
 - Base: This will document the standard way of stroking a vowel sound in a syllable
@@ -178,7 +180,7 @@ Standard Vowel Sounds (Added to left hand consonant).  The Devanagari character 
 |इ|i|EU||
 |ई|ee|AOE||
 |उ|u|AO||
-|ऊ|oo|KHR|Long "u" sound|
+|ऊ|oo|U|Long "u" sound|
 |ऋ|r|R|We use "R" to represent this sound in words, including in the rare case where the ऋ sound starts a syllable by itself (ex. ऋजुता). When written as a maatra attached to a consonant (तृ, कृ, etc.) it tends to behave like a conjunct (see [Additional Left Hand Side Consonant Sounds/Spellings](#additional-left-hand-side-consonant-soundsspellings)).  When fingerspelling ONLY, this maatra is added to the stroke using "E" - see [finger spelling](#finger-spelling) for details.|
 |ए|e|AEU|Long "a" sound.|
 |ऐ|ai|AOEU||
@@ -189,7 +191,7 @@ Standard Vowel Sounds (Added to left hand consonant).  The Devanagari character 
 
 Nasalisation is treated as an "n" sound for most nasalisation.  For a small number of words, consonant nasalisation would be represented as an "m" sound (ex. लम्बा which can also be written in Devanagari as लंबा).
 
-Note: In general, this theory will output a conjunct in preference to anusvar for words like लम्बा (also written as लंबा) and हिन्दी (also written as हिंदी), where both versions are commonly recognized.  For words where anusvar is now more commonly seen and the conjunct might be confusing an anusvar will be output.
+Note: In general, this theory will output a conjunct in preference to anusvar for words like लम्बा (also written as लंबा) and हिन्दी (also written as हिंदी), where both versions are commonly recognized.  For words where anusvar is now more commonly seen in print and therefore the conjunct might be confusing an anusvar will be output.
 
 #### Vowel Sound - Beginning of Word
 
@@ -224,7 +226,6 @@ Right hand side means here the consonant sound when ending a word or syllable an
 Right Hand Side for the base consonant sounds (i.e. the consonants in the alphabet only)
 
 Notes: 
-- Remember that this theory is typically [non-greedy](#greedy-or-non-greedy).  Therefore, when the base consonants appear mid-word, they will typically start the next syllable stroke and therefore will use the [Left Hand Side rules](#left-hand-side-base-consonants).  Another way to think about this is that these will typically be end of word strokes.
 - Aspirated characters _may_ be split mid word.  See notes.
 - Not all consonants have a right hand side stroke.  As words with required right hand side consonant strokes are added, these rules will be updated to include them.
 
