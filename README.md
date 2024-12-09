@@ -22,7 +22,7 @@ Oh, you want to try it now?  Ok.  I'll add more "getting started" documentation 
 1. Download the hindi_words.json and hindi_fingerspelling.json dictionary files to your computer (store it wherever you like to keep your Plover dictionaries)
 2. In Plover, add the dictionary.  It does not require any add-ins at this time.
 3. When enabled, you can now output hindi characters using Plover.  You will be able to write words found in the "hindi_words.json" dictionary and/or write words by using the fingerspelling strokes found in "hindi_fingerspelling.json" dictionary.
-4. Consult the current (theory documentation)[https://github.com/winstond/hind_plover_dictionary/blob/main/Documentation/TheoryDocumentation.md] for details.
+4. Consult the current [theory documentation](https://github.com/winstond/hind_plover_dictionary/blob/main/Documentation/TheoryDocumentation.md) for details.
 
 ## Want to talk to me about it?
 
