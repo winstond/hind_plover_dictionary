@@ -99,6 +99,30 @@ The conjunct consonant rule is that you split a word into strokes on a conjunct 
 
 Note: This is the current rule, but it is under consideration.  It is possible that strokes will be created where the entire conjunct is used to start the second syllable either as an alternative stroke or when there is a clear LHS stroke option for the conjunct (ex. स्क = SK, see [Additional Left Hand Side Consonant Sounds/Spellings](#additional-left-hand-side-consonant-soundsspellings))
 
+Some non-conjunct consonants (particularly aspirated consonants) may also follow the conjunct consonant rule.  For example, ढ़ when found mid word will be stroked as -RD/H.  Here is a list of consonants that will be split mid word.
+
+|Sound-Devanagari|Sound-Roman|STENO|Note|
+|:---:|:---:|:---:|---|
+|rdh|ढ़|-RD/H|When splitting syllables, end last syllable -RD and begin next syllable on H|
+
+Here is a list of a couple of additional situations where we will split complex sound between syllables similarly to the conjunct consonant rule:
+
+|Sound-Devanagari|Sound-Roman|STENO|Note|
+|:---:|:---:|:---:|---|
+|-ng|अंग|-\*PBG/KP|When splitting syllables, this usually sounds like ng on the end of the first syllable and g on the beginning of the next|
+|-ngh|अंघ|-\*PBG/KPH|When splitting syllables, this usually sounds like ng on the end of the first syllable and gh on the beginning of the next|
+
+Some conjuncts do NOT follow the conjunct consonant rule.  When they appear mid word, they will start the second syllable rather than being split.  The following conjuncts do not follow the conjunct consonant rule:
+
+|Sound-Devanagari|Sound-Roman|STENO|Note|
+|:---:|:---:|:---:|---|
+|tr-|त्र and ट्र||When splitting syllables, use त्र for the following syllable (so TR) rather than splitting between (-T/R)|
+
+TODO: Review these - not sure what to do with them:
+|jh|झ|-PBLG or -PBLG/H|When splitting syllables and no matra, allow for both SKWHR and SKWHR/H|
+|ddh|द्ध|-D/TKH or -D/H + matra if necessary|Works middle or end of word.  Suggest making strokes for both.|
+
+
 #### Additional Left Hand Side Consonant Sounds/Spellings
 
 Left Hand Side for additionaly consonant sounds (i.e. consonant sounds beyond the alphabet only such as combined sounds)
@@ -168,6 +192,7 @@ Keeping this in mind, our documentation for vowel sounds will include:
 - Vowel sound rules when vowel sound is at the beginning of a word
 - Vowel sound rules when a vowel sound is at the ending of a syllable
 - Vowel sound rules when a vowel sound is at the ending of a word
+- Special cases, such as vowel+consonant end of word rules and consonant+vowel blend rules
 
 #### Base
 
@@ -203,11 +228,27 @@ No special rules yet.
 
 #### Vowel Sound - End of Word
 
-TODO: Add these.
+Rules for vowel/semivowel sounds and the end of a word.  Typically these rules use a separate stroke to help avoid word boundary conflicts.
+
+TODO: All of these need to be reviewed and tested to confirm if they are necessary to avoid word boundary errors.
+
+|Sound-Devanagari|Sound-Roman|STENO|Note|
+|:---:|:---:|:---:|---|
+|अ|-a|A|When the default अ sound is pronounced at the end of a word, add A to the consonant stroke.|
+|आह|-aa|AU|End of Word Rule: The sounds enough like आ, that we simply use the normal आ stroke patter. TODO: Review this.  Should all words ending in the आ sound have a unique stroke to avoid word boundary errors with words beginning with आ?|
+|ए|-e|A\*EU||
+|ई|-ee|AO\*E|Note: End of sentence or end of syllable only.  Example:डाई - sounds like ah-ee|
+|आय|-aaee|AU/AO\*E|End of word, this sounds like aa/ee.  This is essentially an application of the rule for ई at the end of a word.|
+|आइ|-aai|AU/EU|diphthong rule|
+|आई|-aaee|AU/AOE|diphthong rule|
+|ओह|-oh|O|Seems to be pronounced like a slightly long "o".  We'll simply use the normal stroke for ओ, and keep this as an orthography rule if necessary.|
+|बह, रह, लह, मह, दह, जह, शह, षह, चह|be, re, le, me, de, je, she, she, che|A\*EU|When ह combines with certain consonants the resulting sound is an ए, so this is another application of ए sound end of word.|
 
 #### Vowel Sound - End of Syllable
 
-TODO: Add these. (Not sure if there are any just for syllable.  I think so.)
+|Sound-Devanagari|Sound-Roman|STENO|Note|
+|:---:|:---:|:---:|---|
+|बह, रह, लह, मह, दह, जह, शह, षह, चह|be, re, le, me, de, je, she, she, che|AEU|When ह combines with certain consonants the resulting sound is an ए.  See also: [Vowel Sound - End of Word](#vowel-sound---end-of-word)|
 
 #### Additional
 
@@ -216,6 +257,12 @@ Additional here means vowel sounds (such as diphthongs) beyond the base vowel so
 #### Special
 
 Special here refers to rules for vowel sounds when they appear in specific places in a word.  This is typically done to avoid conflicts or issues with word boundaries.
+
+|Sound-Devanagari|Sound-Roman|STENO|Note|
+|:---:|:---:|:---:|---|
+|-aiya|आय|AOEU|Rule: य semivowel after आ changes the sound to ऐ.  Examples: 1. शायद - the आय sounds like ऐ so stroke is SHAOEU/KWR-D. 2. बनाया would be PW/TPHAOEU/KWRAU.  Follow this rule by pronunciation.|
+|आंघ and आंग|aang|AUPBG|End of Word Rule: Nasalisation + G or GH. (When found mid word, this pattern will follow the [conjunct consonant rule](#conjunct-consonant-rule) (i.e. the "n" sound will end a syllable and the "g" sound will start the next.|
+|आह|aah|AU/HA|End of word rule|
 
 ### Right Hand Side
 
