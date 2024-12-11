@@ -1,6 +1,10 @@
 # Theory Documentation
 Reference documentation for पत्थर सिद्धांत (stone theory), a hindi/devanagari machine steno theory.
 
+## Development Status of This Theory
+
+This theory and this documentation should very much be considered "in development".  Although many of the below rules are mature enough that I don't expect them to change, there are many that I would consider tentative so please do expect potentially significant change to the rules/documentation of this theory.
+
 ## About Hindi
 
 Hindi is written in a script called [Devanagari](https://hindilanguage.info/devanagari/).  Devanagari consists of consonants and stand-alone vowels.  However, when written vowels most commonly appear in words as a maatra sign.  Therefore, when writing hindi each consonant has a form of the consonant+matra representing the consonant with the vowel sound.
@@ -43,7 +47,7 @@ For the balance of this document, it will be assumed that you have a steno machi
 
 ### Greedy or Non-Greedy
 
-Most English theories tend to default to a "greedy" approach to what to include in a syllable stroke; meaning, try to include as many sounds in the stroke as possible using the RHS to capture more of the word (ex. "falter" might be stroked as TPAUL/T-R (non-greedy) or TPAULT/-R (greedy)).  For Hindi, I have so far found it to be more natural to use a non-greedy approach.  I have found that a more greedy approach did not seem to work as well as it does in English Steno.  It is possible that this will make the theory more stroke intensive.  I will be looking for opportunities to incorporate short cuts and possibly some greedy rules to reduce the number of strokes needed.
+Most English theories tend to default to a "greedy" approach to what to include in a syllable stroke; meaning, try to include as many sounds in the stroke as possible using the RHS to capture more of the word (ex. "falter" might be stroked as TPAUL/T-R (non-greedy) or TPAULT/-R (greedy)).  For Hindi, I have so far found it to be more natural to use a non-greedy approach.  I have found that a more greedy approach did not seem to work as well as it does in English Steno.  It is possible that this will make the theory more stroke intensive.  I will be looking for opportunities to incorporate shortcuts and possibly add greedy rules to reduce the number of strokes needed.
 
 ### Consonant Sounds and Spelling
 
@@ -59,69 +63,85 @@ Left Hand Side for the base consonant sounds (i.e. the consonants in the alphabe
 |:---:|:---:|:---:|---|
 |क,क़|k-,q-|K|Use for both in words.|
 |ख,ख़|kh-|KWH|Use for both in words.|
-|ग,ग़|g|KP|Use for both in words.|
-|घ|gh|KPH||
-|च|ch|KH||
-|छ|chh|KHR||
-|ज|j|SKWR||
+|ग,ग़|g-|KP|Use for both in words.|
+|घ|gh-|KPH||
+|च|ch-|KH||
+|छ|chh-|KHR||
+|ज|j-|SKWR||
 |ज्ञ|gy-|KPW|Included in the alphabet in many textbooks, but technically a conjuct of ज and ञ.  Sound is irregular in Hindi (like Gaya).|
-|ज़|z|SWR||
-|झ|jh|SKWHR||
-|ट|t|TR||
-|ठ|th|THR||
-|ड|d|TKR||
-|ड़|r|WR|Not typically found in word initial position.|
-|ढ|dh|TKHR||
-|ढ़|rdh|WHR|Not typically found in word initial position.|
+|ज़|z-|SWR||
+|झ|jh-|SKWHR||
+|ट|t-|TR||
+|ठ|th-|THR||
+|ड|d-|TKR||
+|ड़|r-|WR|Not typically found in word initial position.|
+|ढ|dh-|TKHR||
+|ढ़|rdh-|WHR|Not typically found in word initial position.|
 |ण|n-|TPH|Not typically found in word initial position. On the rare occassion when this starts a syllable, it will be stroked same as न.|
-|त|t|T||
-|थ|th|TH||
-|द|d|TK||
-|ध|dh|TKH||
-|न|n|TPH||
-|प|p|P||
-|फ|ph|PHR||
-|फ़|f|TP||
-|ब|b|PW||
-|भ|bh|PWH||
-|म|m|PH||
-|य|y|KWR||
-|र|r|R||
-|ल|l|HR||
-|व|v|W||
+|त|t-|T||
+|थ|th-|TH||
+|द|d-|TK||
+|ध|dh-|TKH||
+|न|n-|TPH||
+|प|p-|P||
+|फ|ph-|PHR||
+|फ़|f-|TP||
+|ब|b-|PW||
+|भ|bh-|PWH||
+|म|m-|PH||
+|य|y-|KWR||
+|र|r-|R||
+|ल|l-|HR||
+|व|v-|W||
 |श,ष|sh-|SH|Use for both in words.|
-|स|s|S||
-|ह|h|H||
+|स|s-|S||
+|ह|h-|H||
+|ऋ|ri-|REU|NOTE: ऋ is not a consonant, but for purposes of Steno behaves as one when used as a standalone character in a word.  See [Vowel Sound - Base](#vowel-sound---base) for more information about ऋ.|
 
 #### Conjunct Consonant Rule
 
-The conjunct consonant rule is that you split a word into strokes on a conjunct character.  This means that when there is a mid-word conjunct, the first member of conjunct ends the first syllable stroke and the second member of the conjunct starts the next syllable stroke.
+The conjunct consonant rule is that you split a word into syllable strokes on a conjunct character.  This means that when there is a mid-word conjunct, the first member of conjunct ends the first syllable stroke and the second member of the conjunct starts the next syllable stroke.  There will be exceptions to this rule.
 
-Note: This is the current rule, but it is under consideration.  It is possible that strokes will be created where the entire conjunct is used to start the second syllable either as an alternative stroke or when there is a clear LHS stroke option for the conjunct (ex. स्क = SK, see [Additional Left Hand Side Consonant Sounds/Spellings](#additional-left-hand-side-consonant-soundsspellings))
+Here is a nonexhaustive list of conjuncts that will split mid word:
 
-Some non-conjunct consonants (particularly aspirated consonants) may also follow the conjunct consonant rule.  For example, ढ़ when found mid word will be stroked as -RD/H.  Here is a list of consonants that will be split mid word.
-
-|Sound-Devanagari|Sound-Roman|STENO|Note|
-|:---:|:---:|:---:|---|
-|rdh|ढ़|-RD/H|When splitting syllables, end last syllable -RD and begin next syllable on H|
-
-Here is a list of a couple of additional situations where we will split complex sound between syllables similarly to the conjunct consonant rule:
+TODO: Increase the number of examples, provide sample words for each.
 
 |Sound-Devanagari|Sound-Roman|STENO|Note|
 |:---:|:---:|:---:|---|
-|-ng|अंग|-\*PBG/KP|When splitting syllables, this usually sounds like ng on the end of the first syllable and g on the beginning of the next|
-|-ngh|अंघ|-\*PBG/KPH|When splitting syllables, this usually sounds like ng on the end of the first syllable and gh on the beginning of the next|
+|ब्द|-bd|-B/TK||
+|ब्ध|-bdh|-B/TKH||
+|ष्ट|-sht|SH/TR|Sample words/strokes; अष्टक: AGS/TR-BG, कुदृष्टि: KAO/TKREUGS/TEU|
 
-Some conjuncts do NOT follow the conjunct consonant rule.  When they appear mid word, they will start the second syllable rather than being split.  The following conjuncts do not follow the conjunct consonant rule:
+Some non-conjunct consonants (particularly aspirated consonants) may also follow the conjunct consonant rule.  For example, ढ़ when found mid word will be stroked as -RD/H.  Here is a list of non-conjunct consonants that will follow the conjunct consonant rule.
+
+TODO: Increase the number of examples, provide sample words for each.
 
 |Sound-Devanagari|Sound-Roman|STENO|Note|
 |:---:|:---:|:---:|---|
-|tr-|त्र and ट्र||When splitting syllables, use त्र for the following syllable (so TR) rather than splitting between (-T/R)|
+|ढ़|rdh|-RD/H|When splitting syllables, end last syllable -RD and begin next syllable on H|
 
-TODO: Review these - not sure what to do with them:
-|jh|झ|-PBLG or -PBLG/H|When splitting syllables and no matra, allow for both SKWHR and SKWHR/H|
-|ddh|द्ध|-D/TKH or -D/H + matra if necessary|Works middle or end of word.  Suggest making strokes for both.|
+Here is a list of a additional situations where we will split a complex sound between syllables and can be considered to follow the conjunct consonant rule:
 
+TODO: Increase the number of examples, provide sample words for each.
+
+|Sound-Devanagari|Sound-Roman|STENO|Note|
+|:---:|:---:|:---:|---|
+|अंग|-ng|-\*PBG/KP|When splitting syllables, this usually sounds like ng on the end of the first syllable and g on the beginning of the next|
+|अंघ|-ngh|-\*PBG/KPH|When splitting syllables, this usually sounds like ng on the end of the first syllable and gh on the beginning of the next|
+
+Exceptions: Some conjuncts do NOT follow the conjunct consonant rule.  When they appear mid word, they will start the second syllable rather than being split.  The following conjuncts do not follow the conjunct consonant rule:
+
+TODO: Increase the number of examples, provide sample words for each.
+
+|Sound-Devanagari|Sound-Roman|STENO|Note|
+|:---:|:---:|:---:|---|
+|त्र and ट्र|tr-||When splitting syllables, use त्र for the following syllable (so TR) rather than splitting between (-T/R)|
+
+TODO: Review these.  Confirm if they follow the rule or not:
+|झ|jh|-PBLG or -PBLG/H|When splitting syllables and no matra, allow for both SKWHR and SKWHR/H|
+|द्ध|ddh|-D/TKH or -D/H + matra if necessary|Works middle or end of word.  Suggest making strokes for both.|
+
+TODO: Consider to what extent the theory should support multiple options (i.e. allow word with conjuncts or conjunct-like sounds to have multiple theory strokes, one with the split, another without).
 
 #### Additional Left Hand Side Consonant Sounds/Spellings
 
@@ -150,19 +170,7 @@ TODO: Review each of the below to determine which follow the Conjunct Consonant 
 |स्य|sy-|SAOE/KWR|Sounds like see/ya|
 |त्र and ट्र|tr-|TR|Using TR for now, which risks conflict with ट.  Monitor for conflicts.|
 |व्य|vy-|KPWR|Beginning of word only (see [Conjunct Consonant Rules](#conjunct-consonant-rules).).  This typically sounds like "ve/ya" (except when followed by ng (nasalisation+ग) where it just sounds like veng)|
-|दृ|dr-|TKR||
-|वृ|vr-|WR|**Decide if this is beginning of word only.  When in the middle of a word, it could also be split.** This will conflict directly with ड़ so we'll see if this works out.|
-|कृ|kr-|KR||
-|स्कृ|skr-|SKR||
-|गृ, ग़ृ|gri|KPREU||
-|घृ|ghr-|KPHR||
-|नृ|nr-|TPHR||
-|पृ|pr-|PR||
-|तृ|tr-|TR||
-|बृ|br-|PWR||
-|मृ|mr-|PHR||
-|हृ|hr-|R|The ह is ignored.  Potential for conflict with र in otherwise identical words.  However, not very common in words.|
-|ऋ|r-|R|Vowel ऋ when it starts a syllable by itself rather than as a maatra attached to another consonant (ex. ऋतु).|
+|दृ, वृ, कृ, स्कृ, गृ/ग़ृ, घृ, नृ, पृ, तृ, बृ, मृ, हृ/ऋ|dri-, vri-, kri-, skri-, gri-, ghri, nri, pri, tri, bri, mri, ri|\*ri|Note: Essentially this will be consonant+"ri".  See [Vowel Sound - Base](#vowel-sound---base) for explanation of how ऋ behaves both as a maatra and a standalone letter.|
 
 ### Vowel Sounds and Spelling
 
@@ -188,13 +196,14 @@ We also have to consider nasalization.  Both vowel and consonant sounds can have
 Keeping this in mind, our documentation for vowel sounds will include:
 - Base: This will document the standard way of stroking a vowel sound in a syllable
 - Nasalization: How to add nasalisation to a vowel sound or consonant sound
+- Semi-Vowels: Rules for how य and ह affect vowel sounds
 - Vowel sound rules when vowel sound is at the beginning of a syllable
 - Vowel sound rules when vowel sound is at the beginning of a word
 - Vowel sound rules when a vowel sound is at the ending of a syllable
 - Vowel sound rules when a vowel sound is at the ending of a word
 - Special cases, such as vowel+consonant end of word rules and consonant+vowel blend rules
 
-#### Base
+#### Vowel Sound - Base
 
 Standard Vowel Sounds (Added to left hand consonant).  The Devanagari character is shown for clarity, but remember that in a syllable the sound is commonly represented as a maatra.
 
@@ -206,17 +215,26 @@ Standard Vowel Sounds (Added to left hand consonant).  The Devanagari character 
 |ई|ee|AOE||
 |उ|u|AO||
 |ऊ|oo|U|Long "u" sound|
-|ऋ|r|R|We use "R" to represent this sound in words, including in the rare case where the ऋ sound starts a syllable by itself (ex. ऋजुता). When written as a maatra attached to a consonant (तृ, कृ, etc.) it tends to behave like a conjunct (see [Additional Left Hand Side Consonant Sounds/Spellings](#additional-left-hand-side-consonant-soundsspellings)).  When fingerspelling ONLY, this maatra is added to the stroke using "E" - see [finger spelling](#finger-spelling) for details.|
+|ऋ|r|REU|Vocalized using a short "i" sound in addition to the "r" so "ri".  In Steno, this is treated more as a consonant+vowel matra pair (specifically रि) due to its pronunciation.  When written as a maatra attached to a consonant (तृ, कृ, etc.) therefore, it tends to behave like a conjunct (see [Additional Left Hand Side Consonant Sounds/Spellings](#additional-left-hand-side-consonant-soundsspellings)).  When fingerspelling ONLY, this maatra is added to the stroke using "E" - see [finger spelling](#finger-spelling) for details.|
 |ए|e|AEU|Long "a" sound.|
 |ऐ|ai|AOEU||
 |ओ|o|O||
 |औ|au|AOU||
 
-#### Nasalisation
+#### Vowels Sound - Nasalisation
 
 Nasalisation is treated as an "n" sound for most nasalisation.  For a small number of words, consonant nasalisation would be represented as an "m" sound (ex. लम्बा which can also be written in Devanagari as लंबा).
 
 Note: In general, this theory will output a conjunct in preference to anusvar for words like लम्बा (also written as लंबा) and हिन्दी (also written as हिंदी), where both versions are commonly recognized.  For words where anusvar is now more commonly seen in print and therefore the conjunct might be confusing an anusvar will be output.
+
+#### Vowel Sound - Semivowels
+
+The semivowels ह and य can have some effect on the pronunciation of vowel sounds.  The following rules cover these cases:
+
+|Sound-Devanagari|Sound-Roman|STENO|Note|Reviewed|
+|:---:|:---:|:---:|---|---|
+|बह, रह, लह, मह, दह, जह, शह, षह, चह|be, re, le, me, de, je, she, she, che|AEU|When ह combines with certain consonants the resulting sound is an ए.  The general rule is: "When ह is not followed by a full vocalic sound (i.e. it only has the default अ after it), the अ pronunciation changes to ए insteadl.  See also: [Vowel Sound - End of Word](#vowel-sound---end-of-word) for end of word behavior.|Yes|
+|आय|-aiya|AOEU|Rule: य semivowel after आ changes the sound to ऐ.  Examples: 1. शायद - the आय sounds like one type of pronunciation of ऐ so stroke is SHAOEU/KWR-D. 2. बनाया would be PW/TPHAOEU/KWRAU.  Follow this rule by pronunciation.  Example Words: किफ़ायत, उपाय, इलायची|YES|
 
 #### Vowel Sound - Beginning of Word
 
@@ -228,27 +246,25 @@ No special rules yet.
 
 #### Vowel Sound - End of Word
 
-Rules for vowel/semivowel sounds and the end of a word.  Typically these rules use a separate stroke to help avoid word boundary conflicts.
+Rules for vowel/semivowel sounds and the end of a word.  When necessary, these may use different strokes than the vowel in the beginning or middle of a word to avoid word-boundary issues.
 
-TODO: All of these need to be reviewed and tested to confirm if they are necessary to avoid word boundary errors.
+TODO: All of these need to be reviewed and tested to confirm when a separate end of word stroke is needed to avoid word boundary errors.
 
-|Sound-Devanagari|Sound-Roman|STENO|Note|
-|:---:|:---:|:---:|---|
-|अ|-a|A|When the default अ sound is pronounced at the end of a word, add A to the consonant stroke.|
-|आह|-aa|AU|End of Word Rule: The sounds enough like आ, that we simply use the normal आ stroke patter. TODO: Review this.  Should all words ending in the आ sound have a unique stroke to avoid word boundary errors with words beginning with आ?|
-|ए|-e|A\*EU||
-|ई|-ee|AO\*E|Note: End of sentence or end of syllable only.  Example:डाई - sounds like ah-ee|
-|आय|-aaee|AU/AO\*E|End of word, this sounds like aa/ee.  This is essentially an application of the rule for ई at the end of a word.|
-|आइ|-aai|AU/EU|diphthong rule|
-|आई|-aaee|AU/AOE|diphthong rule|
-|ओह|-oh|O|Seems to be pronounced like a slightly long "o".  We'll simply use the normal stroke for ओ, and keep this as an orthography rule if necessary.|
-|बह, रह, लह, मह, दह, जह, शह, षह, चह|be, re, le, me, de, je, she, she, che|A\*EU|When ह combines with certain consonants the resulting sound is an ए, so this is another application of ए sound end of word.|
+|Sound-Devanagari|Sound-Roman|STENO|Note|Reviewed|
+|:---:|:---:|:---:|---|---|
+|अ|-a|A|When the default अ sound is pronounced at the end of a word, add A to the consonant stroke.||
+|आह|-aa|AU|End of Word Rule: The sounds enough like आ, that we simply use the normal आ stroke patter. TODO: Review this.  Should all words ending in the आ sound have a unique stroke to avoid word boundary errors with words beginning with आ?||
+|ए|-e|A\*EU|||
+|ई|-ee|AO\*E|Note: End of sentence or end of syllable only.  Example:डाई - sounds like ah-ee||
+|आइ|-aai|AU/EU|diphthong rule||
+|आई|-aaee|AU/AOE|diphthong rule||
+|ओह|-oh|O|Seems to be pronounced like a slightly long "o".  We'll simply use the normal stroke for ओ, and keep this as an orthography rule if necessary.||
+|बह, रह, लह, मह, दह, जह, शह, षह, चह|be, re, le, me, de, je, she, she, che|A\*EU|See [Vowel Sound - Semivowels](#vowel-sound---semivowels) for details on this behavior.  This is treated as another application of ए sound end of word.|YES|
 
 #### Vowel Sound - End of Syllable
 
 |Sound-Devanagari|Sound-Roman|STENO|Note|
 |:---:|:---:|:---:|---|
-|बह, रह, लह, मह, दह, जह, शह, षह, चह|be, re, le, me, de, je, she, she, che|AEU|When ह combines with certain consonants the resulting sound is an ए.  See also: [Vowel Sound - End of Word](#vowel-sound---end-of-word)|
 
 #### Additional
 
@@ -260,7 +276,6 @@ Special here refers to rules for vowel sounds when they appear in specific place
 
 |Sound-Devanagari|Sound-Roman|STENO|Note|
 |:---:|:---:|:---:|---|
-|-aiya|आय|AOEU|Rule: य semivowel after आ changes the sound to ऐ.  Examples: 1. शायद - the आय sounds like ऐ so stroke is SHAOEU/KWR-D. 2. बनाया would be PW/TPHAOEU/KWRAU.  Follow this rule by pronunciation.|
 |आंघ and आंग|aang|AUPBG|End of Word Rule: Nasalisation + G or GH. (When found mid word, this pattern will follow the [conjunct consonant rule](#conjunct-consonant-rule) (i.e. the "n" sound will end a syllable and the "g" sound will start the next.|
 |आह|aah|AU/HA|End of word rule|
 
@@ -270,50 +285,48 @@ Right hand side means here the consonant sound when ending a word or syllable an
 
 #### Right Hand Side Base Consonants
 
-Right Hand Side for the base consonant sounds (i.e. the consonants in the alphabet only)
+Right Hand Side for the base consonant sounds (i.e. the consonants in the alphabet only).  Roughly in dictionary order - some items are combined out of order.
 
 Notes: 
-- Aspirated characters _may_ be split mid word.  See notes.
+- Aspirated characters _may_ be split mid word.  See [Conjunct Consonant Rule](#conjunct-consonant-rule) which also details which aspirated characters are split mid-word.  In the below tables these will be noted as "End of word only."
 - Not all consonants have a right hand side stroke.  As words with required right hand side consonant strokes are added, these rules will be updated to include them.
+
+TODO: Review all RHS aspirated characters.  If they follow conjunct consonant rule, add an "End of word only" note below.
+TODO: Review nasalisation before all right hand sounds for impact on stroke.
 
 |Sound-Devanagari|Sound-Roman|STENO|Note|
 |:---:|:---:|:---:|---|
-|ब|-b|-B||
-|च|-ch|-FP||
-|छ|-ch|-FP||
-|द|-d|-D||
-|ग|-g|-G||
-|ज|-j|-PBLG||
-|झ|-j|-PBLG||
 |क, क़|-k|-BG||
 |ख, ख़|-k|-BG||
-|ल|-l|-L||
-|म|-m|-PL||
-|न|-n|-PB||
-|प|-p|-P||
-|ढ़|-rd|-RD||
-|ड़|-r|-R||
-|ड़|-r|-R/-R|When full word conflicts|
-|र|-r|-R||
-|श|-sh|-GS||
-|ष|-sh|-GS||
-|थ|-th|-GT||
-|ट|-t|-T||
-|ठ|-t|-T|tentative, consider if a syllable split rule is needed|
-|त|-t|-T||
+|ग, ग़, घ|-g|-G||
+|ङ|ng|-PBG|Note: Rare|
+|च, छ|-ch, -chh|-FP||
+|ज, झ|-j, jh|-PBLG||
 |ज़|-z|-Z||
+|ट, ठ, त|-t|-T||
+|ड़, र|-r|-R||
+|ढ़|-rd|-RD|Note: End of word only?|
+|न, ञ, ण, vowel nasalization|-n|-PB|Note: vowel nasalisation (अँ, आँ, इँ, ईं, etc.) counts as न for end of syllable|
+|थ|-th|-GT||
+|द, ध|-d, -dh|-D|Note: End of word only?|
+|प|-p|-P||
+|फ, फ़|-f|-F|TODO: Consider if there is nasalisation before this.|
+|ब, भ|-b, -bh|-B|Note: End of word only?|
+|म, vowel nasalisation|-m|-PL|Occassionally this may be represented as vowel nasalisation, for example लंबा (also written as लम्बा).  Note: Theory will typically output the conjunct.|
+|ल|-l|-L||
+|श, ष|-sh|-GS||
+|स|-s|-S||
 
 #### Additional Right Hand Side Consonant Sounds/Spellings
 
 Right Hand Side for additional consonant sounds (i.e. consonant sounds beyond the alphabet only such as combined sounds).
 
-Unless noted, the below strokes will respect the [Conjunct Consonant Rule](#conjunct-consonant-rule).  Therefore, the below will always be used for start of word, but may not always be used when splitting syllables.  When a conjunct stroke does not follow the conjunct consonant rule, that means when found mid-word the stroke will start the next syllable rather than being split.
+Unless noted, the below strokes will respect the [Conjunct Consonant Rule](#conjunct-consonant-rule).  Therefore, the below will always be used for end of word, but may not always be used when splitting syllables.  When a conjunct stroke does not follow the conjunct consonant rule, that means when found mid-word the stroke will start the next syllable rather than being split.
 
 TODO: Review each of the below to determine which follow the Conjunct Consonant Rule.
 
 |Sound-Devanagari|Sound-Roman|STENO|Note|
 |:---:|:---:|:---:|---|
-|आय|-aay|AU/AO\*E|Specifically solving for अध्याय|
 |फ़्त|-ft|-FT||
 |ग्ध|-gdh|-GD||
 |ख़्स|-ks|-BGS|This will conflict with -ksh.  We'll see if it works out.|
@@ -352,6 +365,8 @@ TODO: Review each of the below to determine which follow the Conjunct Consonant 
 |स्क|-sk|-FBG||
 |स्थ|-sth|-GTS|_tentative_ (alternatives: \*GT, \*S)|
 |स्त|-st|\*S||
+|-bd|ब्द|-BD||
+|-bd|ब्ध|-BD||
 
 ### Consonant-Vowel Word Parts and Blends
 
@@ -359,15 +374,15 @@ These rules cover special cases where a specific stroke is used on the left or r
 
 ### Prefixes and Suffixes
 
-Specific and common prefix and suffix strokes for highly used prefixes and suffixes in the Hindi language.
+Specific and common prefix and suffix strokes for highly used prefixes and suffixes in the Hindi language.  
 
 #### Prefixes
 
-Prefixes
+None defined yet.
 
 #### Suffixes
 
-Suffixes
+None defined yet.
 
 ### Mandatories and Briefs
 
@@ -379,15 +394,15 @@ Note: A brief can also be created for a whole phrase (multiple words).  This is 
 
 #### Mandatories
 
-Mandatory list
+None defined yet.
 
 #### Briefs
 
-Briefs list
+None defined yet.
 
 #### Phrase Briefs
 
-Phrase briefs
+None defined yet.
 
 ### Finger-spelling
 
@@ -395,16 +410,36 @@ When spelling out a proper name, or to write a word that isn't in the dictionay 
 
 1. \*R is added to each base consonant or vowel to fingerspell it.  This will append the character to whatever word you are writting.
 2. To end a word you will need to manually stroke a space character (SP-Z).
-3. You may have noticed in [Left Hand Side Base Consonants](#left-hand-side-base-consonants) that some strokes cover more than one character (ex. क and क़ both use "K").  This won't work for fingerspelling so the following consonants require a special stroke.  The following table documents base consonants that require a separate left hand side stroke for fingerspelling only.
+3. You may have noticed in [Left Hand Side Base Consonants](#left-hand-side-base-consonants) that some strokes cover more than one character (ex. क and क़ both use "K").  This won't work for fingerspelling so the following consonants require a special stroke.  The following table documents base consonants that require a separate left hand side stroke for fingerspelling only:
 
 |Sound-Devanagari|Sound-Roman|STENO
 |:---:|:---:|:---:|
-|क़|q-|KW*R|
-|ख़|kh-|WH*R|
-|ग़|g|KPHR*R|
-|ष|sh-|SKHR*R|
+|क़|q-|KW\*R|
+|ख़|kh-|WH\*R|
+|ग़|g|KPHR\*R|
+|ष|sh-|SKHR\*R|
 
-4. Maatras, nasalisation, visarg, halant, anusvaar can be added to your finger-spelling stroke as follows: TODO: Document.
+4. Maatras, vowel nasalisation, visarg (consonant nasalisation), halant, anusvaar can be added to your finger-spelling stroke as follows:
+For all of the below, you are reminded that all finger-spelling includes \*R, so be sure to include that.
+
+- Matra: Simply add the appropriate base vowel stroke as usual.  Note that for fingerspelling ऋ as a matra will be "E" added to the stroke.
+- Vowel nasalisation: Add -B to your stroke (this will put the correct bindu or chandrabindu depending on the vowel matra).
+- Anusvar (consonant nasalization): Add -PB to your stroke.
+- Halant (used to make conjuncts): Add -S to your stroke
+- Visarg (Extra nasalization, looks like a : symbol): Add -G to your stroke.
+
+Examples of various fingerspellings:
+त - T\*R (consonant)
+ता - TA\*UR (consonant + maatra)
+तृ - T\*ER (consonant + ऋ maatra specifically)
+ताँ - TA\*URB (consonant + maatra + vowel nasalization)
+तं - T\*RPB (consonant + consonant nasalization)
+स् - S\*RS (halant for creating a conjunct), स्त: S\*RS/T\*R (showing the production of a conjunct)
+तः - T\*RG (consonant + visarg, example word - अतः = A\*R/T\*RG)
+
+Using the above fingerspellings, you should be able to produce almost any hindi word.
+
+NOTE: There is also a "chandra" without the bindu, which is used for transliteration of English words like "coffee" to represent the English "au" sound.  This has not yet been defined for fingerspelling.  Example word: कॉफ़ी (coffee).
 
 ### Months, Days, States and Cities
 
